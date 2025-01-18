@@ -16,18 +16,18 @@ const AdminPage = () => {
   };
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: <LayoutDashboard size={20} /> },
-    { id: 'Classroom', label: 'Classroom', icon: <BookOpen size={20} /> },
-    { id: 'Messages', label: 'Messages', icon: <MessageCircleMore size={20} /> },
-    { id: 'Mentors', label: 'Mentors', icon: <Users size={20} /> },
-    { id: 'Events', label: 'Events', icon: <CalendarDays size={20} /> },
-    { id: 'Community', label: 'Community', icon: <Lightbulb size={20} /> },
-    { id: 'Payments', label: 'Payments', icon: <BadgeIndianRupee size={20} /> },
-    { id: 'My Tasks', label: 'My Tasks', icon: <ClipboardCheck size={20} /> },
-    { id: 'Settings', label: 'Settings', icon: <Settings size={20} /> },
+    { id: 'classroom', label: 'Classroom', icon: <BookOpen size={20} /> },
+    { id: 'messages', label: 'Messages', icon: <MessageCircleMore size={20} /> },
+    { id: 'mentors', label: 'Mentors', icon: <Users size={20} /> },
+    { id: 'events', label: 'Events', icon: <CalendarDays size={20} /> },
+    { id: 'community', label: 'Community', icon: <Lightbulb size={20} /> },
+    { id: 'payments', label: 'Payments', icon: <BadgeIndianRupee size={20} /> },
+    { id: 'my tasks', label: 'My Tasks', icon: <ClipboardCheck size={20} /> },
+    { id: 'settings', label: 'Settings', icon: <Settings size={20} /> },
 
   ];
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen bg-white">
       <Sidebar menuItems={menuItems} activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className="flex-1 overflow-auto">
         <nav className="bg-white px-6 py-3 flex justify-between items-center shadow-md shadow-gray-300">
