@@ -2,18 +2,6 @@ import React from 'react';
 import { Compass } from 'lucide-react';
 
 function Sidebar({ menuItems, activeTab, setActiveTab }) {
-  
-  // Sidebar.propTypes = {
-  //   menuItems: PropTypes.arrayOf(
-  //     PropTypes.shape({
-  //       id: PropTypes.string.isRequired,
-  //       label: PropTypes.string.isRequired,
-  //       icon: PropTypes.node.isRequired,
-  //     })
-  //   ).isRequired,
-  //   activeTab: PropTypes.string.isRequired,
-  //   setActiveTab: PropTypes.func.isRequired,
-  // };
 
   return (
     <div className="w-64 bg-white shadow-lg">

@@ -22,8 +22,6 @@ function Dashboard({ activeTab }) {
             <div className=''>
                 {activeTab === 'dashboard' && (
                     <div>
-                        
-
                         <div className=''>
                             <DashboardPage />
                         </div>
@@ -31,6 +29,26 @@ function Dashboard({ activeTab }) {
                 )}
 
                 {activeTab === 'packages' && (
+                    <div>
+                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        <PackageForm />
+                    </div>
+                )}
+                {activeTab === 'customers' && (
+                    <div>
+                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        <PackageForm />
+                    </div>
+                )}
+
+                {activeTab === 'itinerary' && (
+                    <div>
+                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        <PackageForm />
+                    </div>
+                )}
+
+                {activeTab === 'settings' && (
                     <div>
                         <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
                         <PackageForm />
