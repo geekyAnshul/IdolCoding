@@ -1,140 +1,3 @@
-// // import React from 'react'
-// import Navbar from './Navbar'
-// import { motion } from 'framer-motion';
-// import { BsGraphUpArrow } from 'react-icons/bs';
-// import { RiVideoAiLine } from 'react-icons/ri';
-// import { FaUserTie } from 'react-icons/fa';
-// // import { BsGraphUpArrow } from 'react-icons/bs';
-// // import { RiVideoAiLine } from 'react-icons/ri';
-// import React, { useState, useEffect } from 'react';
-// import girl from '../assets/standgirl.png';
-// import MentorCard from './Mentorcard';
-// import JoinCommunity from './JoinCommunity';
-
-// const Mentorship = () => {
-
-//     const mentors = [
-//         {
-//             name: 'Mr. Wade Warren',
-//             image: '/path/to/image1.png',
-//             experience: '2 Years',
-//             description:
-//                 'As a mentor, I plan to go above and beyond in this program to ensure that you reach your full potential.',
-//         },
-//         {
-//             name: 'Mr. Wade Warren',
-//             image: '/path/to/image2.png',
-//             experience: '2 Years',
-//             description:
-//                 'As a mentor, I plan to go above and beyond in this program to ensure that you reach your full potential.',
-//         },
-//         {
-//             name: 'Mr. Wade Warren',
-//             image: '/path/to/image3.png',
-//             experience: '2 Years',
-//             description:
-//                 'As a mentor, I plan to go above and beyond in this program to ensure that you reach your full potential.',
-//         },
-//         {
-//             name: 'Mr. Wade Warren',
-//             image: '/path/to/image4.png',
-//             experience: '2 Years',
-//             description:
-//                 'As a mentor, I plan to go above and beyond in this program to ensure that you reach your full potential.',
-//         },
-//     ];
-
-//     const [currentIndex, setCurrentIndex] = useState(0);
-
-//     useEffect(() => {
-//         const interval = setInterval(() => {
-//             setCurrentIndex((prevIndex) => (prevIndex + 1) % mentors.length);
-//         }, 3000);
-//         return () => clearInterval(interval);
-//     }, [mentors.length]);
-//     return (
-//         <div>
-//             <Navbar />
-
-//             <header className="max-w-7xl mt-0 mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-24">
-//                 {/* Left Section */}
-//                 <div className="md:w-1/2 space-y-6 text-center md:text-left">
-//                     <h1 className="text-4xl md:text-6xl font-medium text-black">
-//                         Guiding Lights: The Power of <span className="text-[#12B76A] font-semibold">Mentorship</span>
-//                     </h1>
-//                     <p className="text-gray-700">
-//                         In every journey, having a guiding light can make all the difference. At 'Guiding Lights,'
-//                         we believe in the transformative impact of mentorship on personal and professional growth.
-//                     </p>
-//                     <div className="flex justify-center md:justify-start space-x-4">
-//                         <button className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
-//                             Be a Mentor
-//                         </button>
-//                     </div>
-//                 </div>
-
-//                 {/* Right Section */}
-//                 <div className="relative md:w-1/2 flex flex-col items-center md:items-end">
-//                     <motion.div
-//                         className="relative w-64 h-64 items-center justify-center mx-32 mb-28 "
-//                         initial={{ opacity: 0, scale: 0.5 }}
-//                         animate={{ opacity: 1, scale: 1 }}
-//                         transition={{ duration: 1 }}
-//                     >
-//                         <img
-//                             src={girl}
-//                             alt="Mentorship"
-//                             className="absolute w-full  object-cover"
-//                         />
-//                     </motion.div>
-
-//                     {/* Feature Badges */}
-//                     <motion.div
-//                         className="absolute top-10 right-10 bg-white shadow-lg px-4 py-3 rounded-lg flex items-center ml-4"
-//                         initial={{ x: 100, opacity: 0 }}
-//                         animate={{ x: 0, opacity: 1 }}
-//                         transition={{ duration: 1, delay: 0.5 }}
-//                     >
-//                         <FaUserTie className="text-3xl text-green-500 mr-2  " />
-//                         <p className="text-black font-medium">Industry Experts</p>
-//                     </motion.div>
-
-//                     <motion.div
-//                         className="absolute bottom-10 right-2 bg-white shadow-lg px-6 py-4 rounded-lg flex items-center"
-//                         initial={{ x: -100, opacity: 0 }}
-//                         animate={{ x: 0, opacity: 1 }}
-//                         transition={{ duration: 1, delay: 0.7 }}
-//                     >
-//                         <BsGraphUpArrow className="text-3xl text-green-500 mr-2" />
-//                         <p className="text-black font-medium">Experience</p>
-//                     </motion.div>
-
-//                     <motion.div
-//                         className="absolute top-40 right-80 bg-white shadow-lg px-4 py-2 rounded-lg flex items-center"
-//                         initial={{ y: -100, opacity: 0 }}
-//                         animate={{ y: 0, opacity: 1 }}
-//                         transition={{ duration: 1, delay: 0.9 }}
-//                     >
-//                         <RiVideoAiLine className="text-3xl text-green-500 mr-2" />
-//                         <p className="text-black font-medium">Top Rated</p>
-//                     </motion.div>
-//                 </div>
-//             </header>
-//             {/* </div> */}
-//             <div>
-//                 <MentorCard />
-//             </div>
-//             <JoinCommunity />
-
-//         </div>
-//     )
-// }
-
-// export default Mentorship
-
-
-
-
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -145,6 +8,7 @@ import { FaUserTie } from "react-icons/fa";
 import girl from "../assets/standgirl.jpg";
 import MentorCard from "./Mentorcard";
 import JoinCommunity from "./JoinCommunity";
+import HomeContact from "./HomeContactUs.jsx";
 import Footer from "./Footer.jsx";
 const Mentorship = () => {
     const mentors = [
@@ -231,7 +95,7 @@ const Mentorship = () => {
                 </div>
 
                 {/* Right Section */}
-                <div className="relative md:w-1/2 flex flex-col items-center md:items-end">
+                <div className="relative md:w-1/2 flex flex-col items-center md:items-end mb-10">
                     <motion.div
                         className="relative w-64 h-64 items-center justify-center mx-32 mb-28 "
                         initial={{ opacity: 0, scale: 0.5 }}
@@ -282,7 +146,8 @@ const Mentorship = () => {
                 <MentorCard />
             </div>
             <JoinCommunity />
-            <Footer/>
+            <HomeContact />
+            <Footer />
         </div>
     );
 };

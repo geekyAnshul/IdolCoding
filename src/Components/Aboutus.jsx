@@ -88,7 +88,7 @@ function Aboutus() {
                         <h1 className="text-3xl font-bold text-center mb-10">Our Mission</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 p-10 max-w-5xl mx-auto">
                             <div className="border border-green-500 rounded-lg p-6 bg-white shadow-md ">
-                                <div className="flex items-center justify-center text-green-500 text-4xl mb-4">
+                                <div className="flex items-center justify-center text-white bg-green-500  text-3xl mb-4 border border-green-500 rounded-full h-10 w-10 p-7">
                                     <i className="fas fa-user-check"></i>
                                 </div>
                                 <h2 className="text-xl font-bold mb-2">Personalized Guidance</h2>
@@ -99,7 +99,7 @@ function Aboutus() {
                                 </p>
                             </div>
                             <div className="border border-green-500 rounded-lg p-6 bg-white shadow-md">
-                                <div className="flex items-center justify-center text-green-500 text-4xl mb-4">
+                                <div className="flex items-center justify-center text-white bg-green-500 text-4xl mb-4 border border-green-500 rounded-full h-10 w-10 p-7">
                                     <i className="fas fa-share-alt"></i>
                                 </div>
                                 <h2 className="text-xl font-bold mb-2">Knowledge Sharing</h2>
@@ -110,7 +110,7 @@ function Aboutus() {
                                 </p>
                             </div>
                             <div className="border border-green-500 rounded-lg p-6 bg-white shadow-md">
-                                <div className="flex items-center justify-center text-green-500 text-4xl mb-4">
+                                <div className="flex items-center justify-center text-white bg-green-500  text-3xl mb-4 border border-green-500 rounded-full h-10 w-10 p-7">
                                     <i className="fas fa-users"></i>
                                 </div>
                                 <h2 className="text-xl font-bold mb-2">Community Support</h2>

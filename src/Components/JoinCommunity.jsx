@@ -1,87 +1,4 @@
-// import React, { useState } from "react";
-// import object from "../assets/query.jpg"; // If you want to use a single default image for avatars.
 
-// function JoinCommunity() {
-//     const [email, setEmail] = useState("");
-
-//     const handleEmailChange = (event) => {
-//         setEmail(event.target.value);
-//     };
-
-//     const handleSubmit = (event) => {
-//         event.preventDefault();
-//         console.log("Email submitted:", email);
-//     };
-
-    
-
-//     const avatars = [
-//         object, // You can use the same imported image.
-//         object,
-//         object,
-//         object,
-//         object,
-//         object,
-//         object,
-//         object,
-//     ];
-
-//     return (
-//         <div className="bg-green-200 min-h-screen flex items-center justify-center">
-//             <div className="relative z-50 bg-[#12B76A] p-10 rounded-3xl w-[150%] max-w-3xl text-center">
-//                 <h1 className="text-3xl font-bold text-white mb-4">Join Our Community</h1>
-//                 <p className="text-lg text-white mb-8">
-//                     At <span className="font-semibold">[MentorPlatform]</span>, we believe in the power of community to drive
-//                     personal and professional growth. Our platform is more than just a space for mentorship - it's a vibrant
-//                     community where individuals come together to inspire, learn, and achieve their goals.
-//                 </p>
-//                 <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-center justify-center gap-4">
-//                     <input
-//                         type="email"
-//                         className="px-4 py-2 rounded-md text-gray-700 focus:outline-none w-full md:w-2/3"
-//                         placeholder="Drop Your Email"
-//                         value={email}
-//                         onChange={handleEmailChange}
-//                         required
-//                     />
-//                     <button
-//                         type="submit"
-//                         className="bg-white text-green-500 px-6 py-2 rounded-md font-bold hover:bg-green-600 hover:text-white transition"
-//                     >
-//                         Invite Me
-//                     </button>
-//                 </form>
-
-//                 {/* Dashed circle and avatars */}
-//                 <div
-//                     className=" absolute -top-16 left-1/2 transform -translate-x-1/2 w-[170%] h-[130%] rounded-full border-dashed border-2 border-green-400"
-//                 >
-//                     {avatars.map((src, index) => (
-//                         <div
-//                             key={index}
-//                             className="absolute w-12 h-12 rounded-full overflow-hidden border-2 border-white"
-//                             style={{
-//                                 top: `${45 + 50 * Math.sin((index * Math.PI) / 4)}%`,
-//                                 left: `${45 + 45 * Math.cos((index * Math.PI) / 4)}%`
-//                             }}
-//                         >
-//                             <img
-//                                 src={src}
-//                                 alt={`Avatar ${index + 1}`}
-//                                 className="w-full h-full object-cover"
-//                             />
-//                         </div>
-//                     ))}
-//                 </div>
-//             </div>
-
-//         </div>
-       
-
-//     );
-// }
-
-// export default JoinCommunity;
 
 import React from "react";
 import { useState } from "react";
@@ -114,7 +31,6 @@ function JoinCommunity() {
         "top-28 left-[1000px]",   ///-----
         "bottom-20 left-[901px]", //
         "bottom-40 left-[460px]",
-        
        
     ];
     

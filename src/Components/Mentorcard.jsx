@@ -1,11 +1,9 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { RxBackpack } from "react-icons/rx";
 import query from '../assets/query.jpg';
+import { IoBriefcaseOutline } from "react-icons/io5";
 
 const MentorCard = () => {
     const mentors = [
@@ -121,15 +119,19 @@ const MentorCard = () => {
 
 
 
-            <div className="overflow-x-hidden relative p-10 w-full mt-4">
+            <div className="overflow-x-hidden relative p-10 w-full mt-20">
+            <h2 className="text-5xl text-green-500 font-bold text-center mb-16">
+                    Specialized Mentors  
+                    <span className=" text-black pl-2">from <br /> all around the world</span>
+                </h2>
                 {/* Swiper Track */}
                 <div className="flex animate-scroll-reverse space-x-20">
                     {mentors.concat(mentors).map((mentor, index) => (
                         <div
                             key={index}
-                            className="flex-shrink-0 w-80 flex items-center justify-center"
+                            className="flex-shrink-0 w-80 flex items-center justify-center bg-white"
                         >
-                            <div className="flex flex-col p-6 border-2 border-green-500 bg-green-100 shadow-md rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+                            <div className="flex flex-col p-6 border-2 border-green-500  shadow-md rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl">
                                 <img
                                     src={mentor.image}
                                     alt={mentor.name}
@@ -140,14 +142,15 @@ const MentorCard = () => {
                                 </h1>
                                 <div className="flex items-center mb-2">
                                     {/* <RxBackpack className="text-xl mr-2 text-green-500" /> */}
+                                    <IoBriefcaseOutline className="text-xl mr-2  text-green-500"/>
                                     <span className="text-sm text-gray-500">{mentor.experience}</span>
                                 </div>
                                 <p className="text-gray-700 text-sm mb-4">
                                     {mentor.description}
                                 </p>
-                                <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded w-full transition-transform duration-300">
+                                {/* <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded w-full transition-transform duration-300">
                                     Book A Free Trial
-                                </button>
+                                </button> */}
                             </div>
                         </div>
                     ))}
@@ -170,11 +173,11 @@ const MentorCard = () => {
                         Get In Touch
                     </button>
                 </div>
-                <div className="flex items-center justify-center mt-10 text-center ">
+                <div className="flex items-center justify-center mt-10 text-center  ">
                     <img
                         src={query} // Replace with actual image URL
                         alt="Illustration of people working together"
-                        className="h-48 w-48"
+                        className="h-80 w-80 rounded-3xl"
                     />
                 </div>
             </div>
