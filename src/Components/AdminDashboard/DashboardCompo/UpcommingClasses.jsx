@@ -24,7 +24,7 @@ const classes = [
 
 const UpcommingClasses = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className=" p-2">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-2xl font-bold text-gray-800">Upcoming Classes</h1>

@@ -69,12 +69,12 @@ const PerformanceBarGraph = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-2 bg-gray-100 rounded-lg shadow-md ">
-      <h2 className="text-xl font-semibold mb-6 text-gray-800">
+    <div className="flex flex-col items-center p-2 rounde-lg border-2 border-green-300 bg-white rounded-lg  ">
+      <h2 className="text-xl font-semibold text-gray-800">
         Weekly Performance Graph
       </h2>
       <div className="h-80">
-        <Bar data={data} options={options} className="w-[700px] h-[100px]" />
+        <Bar data={data} options={options} className="w-[700px]  py-10" />
       </div>
     </div>
   );

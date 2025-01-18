@@ -8,7 +8,7 @@ const Calendar = () => {
     const firstDayOfMonth = new Date(year, month, 1);
     const lastDayOfMonth = new Date(year, month + 1, 0);
     const days = [];
-    
+
     // Fill days from the previous month
     const firstDayWeekday = firstDayOfMonth.getDay();
     for (let i = firstDayWeekday - 1; i >= 0; i--) {
@@ -50,12 +50,12 @@ const Calendar = () => {
   const days = getDaysInMonth(year, month);
 
   return (
-    <div className="flex flex-col items-center p-6 bg-gray-100 rounded-md shadow-md max-w-md mx-auto">
+    <div className="flex flex-col items-center p-4    max-w-md mx-auto">
       {/* Header */}
       <div className="flex items-center justify-between w-full mb-4">
         <button
           onClick={() => changeMonth(-1)}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
         >
           Prev
         </button>
@@ -64,7 +64,7 @@ const Calendar = () => {
         </h2>
         <button
           onClick={() => changeMonth(1)}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
         >
           Next
         </button>
@@ -78,13 +78,12 @@ const Calendar = () => {
       </div>
 
       {/* Dates */}
-      <div className="grid grid-cols-7 gap-2 w-full text-center mt-2">
+      <div className="grid grid-cols-7 gap-1 w-full text-center mt-2">
         {days.map(({ date, isCurrentMonth }, index) => (
           <div
             key={index}
-            className={`p-2 rounded cursor-pointer ${
-              isCurrentMonth ? "bg-white" : "bg-gray-200 text-gray-400"
-            } hover:bg-blue-100`}
+            className={`p-1 rounded-full cursor-pointer ${isCurrentMonth ? "bg-white" : "bg-gray-200 text-gray-400"
+              } hover:bg-green-200`}
             onClick={() => alert(`You clicked on ${date.toDateString()}`)}
           >
             {date.getDate()}

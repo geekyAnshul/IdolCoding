@@ -8,10 +8,10 @@ import UpcommingClasses from './DashboardCompo/UpcommingClasses';
 
 const DashboardPage = () => {
     return (
-        <div className=' bg-gray-100 p-2'>
+        <div className=' bg-gray-100 ml-64'>
             <div className='max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 {/* Left Column */}
-                <div className='lg:col-span-2 space-y-6'>
+                <div className='lg:col-span-2 space-y-4'>
                     {/* Welcome Banner */}
                     <div className='flex bg-[#12b76a] p-6 rounded-lg shadow-md justify-between items-center'>
                         <div>
@@ -26,16 +26,16 @@ const DashboardPage = () => {
                     </div>
 
                     {/* Performance Graph */}
-                    <div className=''>
+                    <div className=' '>
                         <PerformanceGraph />
                     </div>
 
                     {/* Attendance and Course Progress */}
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-                        <div className='bg-white p-6 rounded-lg shadow-md'>
+                        <div className='bg-white p-6 rounded-lg border-2 border-green-300'>
                             <Attendance />
                         </div>
-                        <div className='bg-white p-6 rounded-lg shadow-md'>
+                        <div className='bg-white p-6 rounded-lg border-2 border-green-300'>
                             <CourseProgress />
                         </div>
                     </div>
@@ -44,12 +44,12 @@ const DashboardPage = () => {
                 {/* Right Column */}
                 <div className='space-y-6'>
                     {/* Calendar */}
-                    <div className='bg-white p-6 rounded-lg shadow-md'>
+                    <div className='bg-white p-6 rounded-lg border-2 border-green-300'>
                         <Calender />
                     </div>
 
                     {/* Upcoming Classes */}
-                    <div className='bg-white p-6 rounded-lg shadow-md'>
+                    <div className='bg-white p-6 rounded-lg  border-2 border-green-300'>
                         <UpcommingClasses />
                     </div>
                 </div>

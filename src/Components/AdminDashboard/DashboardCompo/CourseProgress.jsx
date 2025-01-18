@@ -11,7 +11,7 @@ const CourseProgress = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md max-w-xl mx-auto">
+    <div className="flex flex-col items-center p-6 rounded-lgmax-w-xl mx-auto">
       <h2 className="text-xl font-semibold mb-6 text-gray-800">
         Course Progress
       </h2>
@@ -21,7 +21,7 @@ const CourseProgress = () => {
             key={index}
             className="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow-lg"
           >
-            <div className="w-24 h-24">
+            <div className="w-20 h-20">
               <CircularProgressbar
                 value={course.progress}
                 text={`${course.progress}%`}
@@ -33,7 +33,7 @@ const CourseProgress = () => {
                 })}
               />
             </div>
-            <p className="mt-4 text-lg font-medium text-gray-700">{course.name}</p>
+            <p className="mt-8 text-sm font-medium text-gray-700">{course.name}</p>
           </div>
         ))}
       </div>

@@ -48,12 +48,12 @@ const AttendancePieChart = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-6 bg-gray-100 rounded-lg shadow-md max-w-md mx-auto">
+    <div className="flex flex-col items-center justify-center  rounded-lg max-w-md mx-auto">
       <h2 className="text-xl font-semibold mb-4 text-gray-800">
         Student Attendance
       </h2>
-      <div className="w-full">
-        <Pie data={data} options={options} />
+      <div className="w-full px-10">
+        <Pie data={data} options={options}  />
       </div>
     </div>
   );
