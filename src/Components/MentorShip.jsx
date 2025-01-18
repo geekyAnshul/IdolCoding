@@ -177,7 +177,7 @@ const Mentorship = () => {
             <header className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-12 md:py-24">
                 {/* Left Section */}
                 <div className="md:w-1/2 space-y-6 text-center md:text-left">
-                    <h1 className="text-3xl md:text-5xl font-medium text-black">
+                    <h1 className="text-3xl lg:text-5xl font-medium text-black xs:mt-10 lg:mt-0">
                         Guiding Lights: The Power of{" "}
                         <span className="text-[#12B76A] font-semibold">Mentorship</span>
                     </h1>
@@ -233,7 +233,7 @@ const Mentorship = () => {
                 {/* Right Section */}
                 <div className="relative md:w-1/2 flex flex-col items-center md:items-end">
                     <motion.div
-                        className="relative w-64 h-64 items-center justify-center mx-32 mb-28 "
+                        className="relative xs:w-32 xs:h-32 lg:w-64 lg:h-64 items-center justify-center mx-32 mb-28 "
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1 }}
@@ -247,7 +247,7 @@ const Mentorship = () => {
 
                     {/* Feature Badges */}
                     <motion.div
-                        className="absolute top-10 right-10 bg-white shadow-lg px-4 py-3 rounded-lg flex items-center ml-4"
+                        className="absolute xs:hidden lg:block top-10 right-10 bg-white shadow-lg px-4 py-3 rounded-lg flex items-center ml-4"
                         initial={{ x: 100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1, delay: 0.5 }}
@@ -257,7 +257,7 @@ const Mentorship = () => {
                     </motion.div>
 
                     <motion.div
-                        className="absolute bottom-10 right-2 bg-white shadow-lg px-6 py-4 rounded-lg flex items-center"
+                        className="absolute xs:hidden lg:block bottom-10 right-2 bg-white shadow-lg px-6 py-4 rounded-lg flex items-center"
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1, delay: 0.7 }}
@@ -267,7 +267,7 @@ const Mentorship = () => {
                     </motion.div>
 
                     <motion.div
-                        className="absolute top-40 right-80 bg-white shadow-lg px-4 py-2 rounded-lg flex items-center"
+                        className="absolute xs:hidden lg:block top-40 right-80 bg-white shadow-lg px-4 py-2 rounded-lg flex items-center"
                         initial={{ y: -100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1, delay: 0.9 }}
