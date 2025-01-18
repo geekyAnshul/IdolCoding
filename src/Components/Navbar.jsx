@@ -15,11 +15,11 @@ const Navbar = () => {
       };
   return (
     <div>
-           <nav className="xs:px-10 md:px-32  w-full mx-auto flex items-center justify-between  py-8 bg-[#effff8]">
+           <nav className="xs:px-10 lg:px-32  w-full mx-auto flex items-center justify-between  py-8 bg-[#effff8]">
       <div className="text-2xl font-semibold text-green-500">CODINGIDOL</div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex space-x-8 font-medium">
+      <div className="hidden lg:flex space-x-8 font-medium">
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -60,7 +60,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Icon */}
       <button
-        className="md:hidden text-3xl text-green-500"
+        className="lg:hidden text-3xl text-green-500"
         onClick={toggleSidebar}
       >
         <HiMenuAlt3 />

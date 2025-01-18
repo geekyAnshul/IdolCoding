@@ -219,10 +219,10 @@ const HomeTopMentors = () => {
             className="w-12 h-12 rounded-full object-cover border-green-500 border-2 hover:scale-105 duration-300 cursor-pointer"
           />
         </div>
-        <h1 className="text-green-500 text-2xl font-normal text-center">+200</h1>
+        <h1 className="text-green-500 text-sm font-normal text-center">More that 200+ mentors</h1>
       </div>
       {/* Become a Mentor Button */}
-      <button className="mt-10 bg-green-500 text-white py-4 px-4 rounded hover:bg-green-600 text-center md:ml-4">
+      <button className=" xs:mt-10 lg:-mt-10 bg-green-500 text-white py-4 px-4 rounded hover:bg-green-600 text-center md:ml-10">
         Become a Mentor
       </button>
     </div>

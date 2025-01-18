@@ -13,15 +13,16 @@ import Navbar from "./Navbar";
 
 const HomeHeroSection = () => {
   return (
+    <>
     <div>
-        <div className="bg-[#defff2] h-screen ">
+        <div className="bg-[#defff2]  xs:h-fit lg:h-screen">
      
      <Navbar/>
 
      
-      <header className=" max-w-7xl mx-auto  flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 xs:py-10 md:py-24">
-        <div className="md:w-1/2 space-y-6 text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-medium text-black">
+      <header className=" max-w-7xl mx-auto  flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-16 xs:py-10 md:py-16 lg:py-24">
+        <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
+          <h1 className="text-4xl md:text-6xl font-medium text-black xs:mt-10 lg:mt-0 ">
             Mentoring for a brighter <span className="text-[#12B76A] font-semibold">tomorrow</span>
           </h1>
           <p className="text-gray-700">
@@ -60,7 +61,7 @@ const HomeHeroSection = () => {
 
  
   <motion.div
-    className="absolute -top-3 right-10 bg-white shadow-lg xs:px-2 xs:py-1 md:px-6 md:py-3 rounded-lg"
+    className="absolute xs:hidden md:block -top-3 right-10 bg-white shadow-lg xs:px-2 xs:py-1 md:px-6 md:py-3 rounded-lg"
     initial={{ x: 100, opacity: 0 }}   
     animate={{ x: 0, opacity: 1 }}
     transition={{ duration: 1, delay: 0.5 }}
@@ -69,7 +70,7 @@ const HomeHeroSection = () => {
   </motion.div>
 
   <motion.div
-    className="absolute -bottom-3 right-2 bg-white shadow-lgxs:px-2 xs:py-1 md:px-6 md:py-3  rounded-lg"
+    className="absolute xs:hidden md:block -bottom-3 right-2 bg-white shadow-lgxs:px-2 xs:py-1 md:px-6 md:py-3  rounded-lg"
     initial={{ x: -100, opacity: 0 }}
     animate={{ x: 0, opacity: 1 }}
     transition={{ duration: 1, delay: 0.7 }}
@@ -78,22 +79,22 @@ const HomeHeroSection = () => {
   </motion.div>
 
   <motion.div
-    className="absolute md:top-40 md:right-80 bg-white shadow-lg xs:px-2 xs:py-1 md:px-6 md:py-3 rounded-lg"
+    className="absolute xs:hidden md:block md:top-40 md:right-80 bg-white shadow-lg xs:px-2 xs:py-1 md:px-6 md:py-3 rounded-lg"
     initial={{ y: -100, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 1, delay: 0.9 }}
   >
     <p className="text-black font-medium"><RiVideoAiLine className="md:text-3xl text-green-500 mr-2 inline"/>1 on 1 Mentorship</p>
   </motion.div>
-</div>;
+</div>
       </header>
 
      
     </div>
-    <HomeTopMentors/>
-
-   
+ 
     </div>
+    <HomeTopMentors/>
+    </>
   );
 };
 

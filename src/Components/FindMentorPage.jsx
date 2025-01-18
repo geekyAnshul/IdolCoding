@@ -498,7 +498,7 @@ const FindMentorPage = () => {
     <div>
         <div className="bg-green-950 mt-20 text-white xs:p-8 md:pl-40 flex items-center ">
       <div className="flex flex-col max-w-4xl mx-auto">
-        <h1 className=" xs:text-xl md:text-5xl font-semibold mb-4 md:w-3/4">Mentors with Good Experience</h1>
+        <h1 className=" xs:text-xl md:text-3xl lg:text-5xl font-semibold mb-4 lg:w-3/4">Mentors with Good Experience</h1>
        
         <div className="flex xs:flex-col md:flex-row items-center gap-4 mt-4">
        <div className="flex -space-x-5">
@@ -538,7 +538,7 @@ const FindMentorPage = () => {
       </div>
       
         {/* Replace with your image source */}
-       <div className='relative xs:hidden md:block'>
+       <div className='relative xs:hidden lg:block'>
        <img src={ad} alt="CodingIdol" className="w-full " />
        <img src={ad1} alt="CodingIdol" className="w-96 h-96 absolute top-20 right-20" />
        </div>
