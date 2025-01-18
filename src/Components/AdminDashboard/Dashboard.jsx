@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 // import Chart from 'react-apexcharts'
 // import RecentActivity from './RecentActivity';
 import DashboardPage from './DashboardPage';
-import PackageForm from './PackageForm';
+import PackageForm from './ClassRoom';
 import { Package, Users, MapPin, Calendar, MoreVertical } from 'lucide-react';
+import ClassRoom from './ClassRoom';
 
 
 function Dashboard({ activeTab }) {
@@ -28,10 +29,10 @@ function Dashboard({ activeTab }) {
                     </div>
                 )}
 
-                {activeTab === 'packages' && (
+                {activeTab === 'classroom' && (
                     <div>
                         <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
-                        <PackageForm />
+                        <ClassRoom />
                     </div>
                 )}
                 {activeTab === 'customers' && (

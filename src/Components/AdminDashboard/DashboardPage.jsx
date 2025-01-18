@@ -8,7 +8,7 @@ import UpcommingClasses from './DashboardCompo/UpcommingClasses';
 
 const DashboardPage = () => {
     return (
-        <div className=' bg-gray-100 p-2'>
+        <div className=' bg-gray-100 pl-64'>
             <div className='max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 {/* Left Column */}
                 <div className='lg:col-span-2 space-y-6'>
