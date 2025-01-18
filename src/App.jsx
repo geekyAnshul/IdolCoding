@@ -7,6 +7,7 @@ import FindMentorPage from "./Components/FindMentorPage";
 import Mentorship from "./Components/MentorShip";
 import Aboutus from "./Components/Aboutus";
 
+
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/find-a-mentor" element={<FindMentorPage />} />
         <Route path="/mentorship" element= {<Mentorship/>} />
         <Route path="/about-us" element= {<Aboutus/>} />
+       
       </Routes>
     </Router>
   );

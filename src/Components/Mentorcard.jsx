@@ -160,8 +160,8 @@ const MentorCard = () => {
 
 
             {/* Query section */}
-            <div className="bg-green-900 p-10 text-white flex ">
-                <div className="container mx-auto text-start w-2/3 m-20 mi-0">
+            <div className="bg-green-900 xs:p-8 lg:p-10 text-white flex xs:flex-col lg:flex-row ">
+                <div className="max-w-7xl mx-auto text-start lg:w-2/3 m-20 ">
                     <h1 className="text-4xl font-bold mb-4">Any Queries?</h1>
                     <p className="text-lg mb-8">
                         Join us on our mission to empower growth through mentorship. Whether
