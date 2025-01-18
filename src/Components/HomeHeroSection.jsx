@@ -32,7 +32,7 @@ const HomeHeroSection = () => {
             and guidance, and embark on a journey of mutual learning and achievement. Your
             success story begins here.
           </p>
-          <div className="flex justify-center md:justify-start space-x-4">
+          <div className="flex justify-center lg:justify-start space-x-4">
             <button className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
               Get Started
             </button>
