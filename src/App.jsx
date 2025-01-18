@@ -1,30 +1,20 @@
-// import { useState } from 'react'
-// import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
-// import './App.css'
-// import HomeHeroSection from './Components/HomeHeroSection'
 
-// function App() {
- 
-
-//   return (
-//     <>
-//       <HomeHeroSection/>
-     
-//     </>
-//   )
-// }
-
-// export default App
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import HomeHeroSection from './Components/HomeHeroSection';
+import FindMentorPage from "./Components/FindMentorPage";
+import Mentorship from "./Components/MentorShip";
+import Aboutus from "./Components/Aboutus";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomeHeroSection />} />
+        <Route path="/find-a-mentor" element={<FindMentorPage />} />
+        <Route path="/mentorship" element= {<Mentorship/>} />
+        <Route path="/about-us" element= {<Aboutus/>} />
       </Routes>
     </Router>
   );
