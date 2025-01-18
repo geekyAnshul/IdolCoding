@@ -6,6 +6,7 @@ import HomeHeroSection from './Components/HomeHeroSection';
 import FindMentorPage from "./Components/FindMentorPage";
 import Mentorship from "./Components/MentorShip";
 import Aboutus from "./Components/Aboutus";
+import AdminPage from "./Components/AdminDashboard/AdminPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/find-a-mentor" element={<FindMentorPage />} />
         <Route path="/mentorship" element= {<Mentorship/>} />
         <Route path="/about-us" element= {<Aboutus/>} />
+        <Route path="/admin" element= {<AdminPage/>} />
       </Routes>
     </Router>
   );
