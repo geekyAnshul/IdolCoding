@@ -43,7 +43,7 @@ function EventsList() {
   const upcomingEvents = filteredEvents.filter(event => !event.isToday);
 
   return (
-    <div className=" -mt-16 ">
+    <div className="  ">
       <div className="w-full max-w-sm bg-white rounded-2xl p-6 border-2 border-zinc-200">
         <div className="flex items-center justify-between mb-6 bg-white">
           <h2 className="text-xl font-semibold text-gray-900">Event List</h2>

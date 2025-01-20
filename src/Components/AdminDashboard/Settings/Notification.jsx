@@ -2,7 +2,7 @@ import React from 'react';
 
 function Notification() {
   return (
-    <div className="pl-4 -mt-16">
+    <div className="lg:pl-4 xs:mt-4 lg:mt-0">
       <div className="bg-white rounded-lg border-2 border-zinc-200 w-full max-w-[800px] p-6 space-y-6">
         {/* Main Notifications Section */}
         <div className="space-y-2">

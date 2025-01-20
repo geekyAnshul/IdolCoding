@@ -8,7 +8,7 @@ import UpcommingClasses from './DashboardCompo/UpcommingClasses';
 
 const DashboardPage = () => {
     return (
-        <div className=' pl-64'>
+        <div className=' lg:pl-64'>
             <div className='max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 {/* Left Column */}
                 <div className='lg:col-span-2 space-y-4'>
@@ -26,7 +26,7 @@ const DashboardPage = () => {
                     </div>
 
                     {/* Performance Graph */}
-                    <div className=' '>
+                    <div>
                         <PerformanceGraph />
                     </div>
 

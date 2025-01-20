@@ -34,7 +34,7 @@ const courses = [
 
 function CompletedCourse() {
   return (
-    <div className="p-4 w-[480px] ">
+    <div className="p-4 lg:w-[480px] ">
       <div className="w-full max-w-lg bg-white rounded-3xl border-2 border-zinc-200 p-6">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-xl font-semibold text-gray-800">Completed Courses</h2>

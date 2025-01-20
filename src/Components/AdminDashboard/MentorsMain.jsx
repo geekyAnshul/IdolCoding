@@ -5,8 +5,8 @@ import YourMentors from './Mentors/YourMentors'
 
 const MentorsMain = () => {
   return (
-    <div className='pl-64'>
-        <div className='flex gap-4'>
+    <div className='lg:pl-64'>
+        <div className='flex xs:flex-col lg:flex-row gap-4'>
             <div>
             <TopMentorsList/>
             </div>
