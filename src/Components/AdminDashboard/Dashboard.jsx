@@ -6,10 +6,9 @@ import DashboardPage from './DashboardPage';
 import PackageForm from './ClassRoom';
 // import { Package, Users, MapPin, Calendar, MoreVertical } from 'lucide-react';
 import ClassRoom from './ClassRoom';
-import Messages from './Message/Messages';
-import Comunity from './Community/Comunity';
-import Task from './MYTask/Task';
-import Payments from './Payments';
+import MentorsMain from './MentorsMain';
+import EventsMain from './EventsMain';
+import SettingMain from './SettingMain';
 
 
 function Dashboard({ activeTab }) {
@@ -56,21 +55,24 @@ function Dashboard({ activeTab }) {
                     </div>
                 )}
 
-
-                {activeTab === 'payments' && (
+                 {activeTab === 'mentors' && (
                     <div>
                         <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
-                        <Payments/>
+                        <MentorsMain />
                     </div>
                 )}
 
-
-
+                 {activeTab === 'events' && (
+                    <div>
+                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        <EventsMain />
+                    </div>
+                )}     
 
                 {activeTab === 'settings' && (
                     <div>
                         <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
-                        <PackageForm />
+                        <SettingMain />
                     </div>
                 )}
 

@@ -18,8 +18,8 @@ function AssignmentsTable() {
   ];
 
   return (
-    <div className=" bg-transparent  p-4">
-      <div className="bg-green-50 rounded-2xl border-2 border-gray-200 p-6 w-full max-w-md">
+    <div className=" bg-transparent pt-4">
+      <div className="bg-green-50 rounded-3xl border-2 border-gray-200 p-6 w-full max-w-lg">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-xl font-semibold text-gray-800">Assignments</h2>
