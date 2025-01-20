@@ -45,7 +45,7 @@ const Notification = () => {
   };
 
   return (
-    <div className="max-w-md w-full bg-white rounded-3xl border-2 border-[#C2B0B0] p-8">
+    <div className="lg:max-w-md w-full bg-white rounded-3xl border-2 border-[#C2B0B0] p-8">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Notification</h2>
         <button className="text-sm text-green-600">Mark all as read</button>

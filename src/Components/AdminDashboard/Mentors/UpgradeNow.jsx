@@ -9,7 +9,7 @@ function UpgradeNow() {
   ];
 
   return (
-    <div className=" bg-gray-50 -mt-16">
+    <div className=" bg-gray-50">
       <div className="w-full max-w-md bg-white rounded-2xl p-5 border-2 border-gray-200">
         <div className="flex items-start justify-between mb-4">
           <div className="flex gap-3">

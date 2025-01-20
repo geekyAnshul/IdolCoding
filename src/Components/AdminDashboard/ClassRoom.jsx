@@ -7,24 +7,24 @@ import CompletedCourse from "./ClassRoom/CompletedCourse";
 
 const ClassRoom = () => {
   return (
-    <div className="lg:pl-64">
-      <div className="flex gap-10">
-        <div className="w-[60%]">
+    <div className="lg:pl-64 ">
+      <div className="flex xs:flex-col lg:flex-row gap-10">
+        <div className="lg:w-[60%]">
           <LineGraph />
         </div>
-        <div className="w-[40%]">
+        <div className="lg:w-[40%]">
           <UpcommingClasses />
         </div>
       </div>
 
 
 
-    <div className="flex justify-between ">
-    <div className="flex w-[100%]">
-      <div className="w-[50%]">
+    <div className="flex  xs:flex-col lg:flex-row justify-between ">
+    <div className="flex  xs:flex-col lg:flex-row w-[100%]">
+      <div className="lg:w-[50%]">
       <AssignmentsTable />
       </div>
-      <div className="w-[50%]">
+      <div className="lg:w-[50%]">
       <StatisticsPortion />
       </div>
       

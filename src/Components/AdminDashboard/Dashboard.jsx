@@ -27,7 +27,7 @@ function Dashboard({ activeTab }) {
 
                 {activeTab === 'classroom' && (
                     <div>
-                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
                         <ClassRoom />
                     </div>
                 )}
@@ -43,34 +43,34 @@ function Dashboard({ activeTab }) {
 
                 {activeTab === 'community' && (
                     <div>
-                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
                         <Comunity />
                     </div>
                 )}
 
                  {activeTab === 'mentors' && (
                     <div>
-                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
                         <MentorsMain />
                     </div>
                 )}
                  {activeTab === 'payments' && (
                     <div>
-                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
                         <Payments/>
                     </div>
                 )}
 
                  {activeTab === 'events' && (
                     <div>
-                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
                         <EventsMain />
                     </div>
                 )}     
 
                 {activeTab === 'settings' && (
                     <div>
-                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
                         <SettingMain />
                     </div>
                 )}

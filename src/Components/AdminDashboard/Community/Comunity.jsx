@@ -6,7 +6,7 @@ import Activities from "./Activities";
 
 const Comunity = () => {
     return (
-        <div className=" flex flex-col lg:flex-row gap-4 p-4 ml-64 -mt-16">
+        <div className=" flex flex-col lg:flex-row gap-4 p-4 lg:ml-64 ">
             <div className="rounded-3xl p-4 flex-1 border-2 border-[#C2B0B0]">
 
                 {/* Main Container */}
@@ -17,7 +17,7 @@ const Comunity = () => {
             <div>
                 <Notification />
                 {/* Post Creation */}
-                <div className="max-w-md w-full bg-[#B4E9D1] rounded-3xl border-2 border-[#C2B0B0] mt-6 p-6">
+                <div className="lg:max-w-md w-full bg-[#B4E9D1] rounded-3xl border-2 border-[#C2B0B0] mt-6 p-6">
                     <h2 className="text-3xl font-bold p-4">Create a Post</h2>
                     <textarea
                         placeholder="Write Something"

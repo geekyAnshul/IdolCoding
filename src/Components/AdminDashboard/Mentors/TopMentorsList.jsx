@@ -45,7 +45,7 @@ function TopMentorsList() {
   );
 
   return (
-    <div className=" bg-white -mt-16">
+    <div className=" bg-white ">
       <div className="max-w-4xl">
         <div className="flex justify-between items-center ">
           <h1 className="text-2xl font-medium text-green-500">Top Mentors list</h1>

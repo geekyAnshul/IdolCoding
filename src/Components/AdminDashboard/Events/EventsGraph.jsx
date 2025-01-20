@@ -57,7 +57,7 @@ function EventsGraph() {
   };
 
   return (
-    <div className=" bg-gray-50 -mt-16 ">
+    <div className=" bg-gray-50  ">
       <div className="w-full max-w-5xl bg-white rounded-2xl h-[500px] px-10 pt-3 border-2 border-zinc-200">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-4">

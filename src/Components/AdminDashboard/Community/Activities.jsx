@@ -28,7 +28,7 @@ const Activities = () => {
 
     return (
         <div className="p-2 ">
-            <div className="max-w-4xl mx-auto">
+            <div className="lg:max-w-4xl mx-auto">
                 {/* Header */}
                 <h2 className="text-2xl font-bold text-gray-800">Activities</h2>
                 <p className="text-gray-600 mt-1">

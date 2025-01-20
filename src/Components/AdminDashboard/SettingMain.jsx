@@ -4,12 +4,12 @@ import Notification from './Settings/Notification'
 
 const SettingMain = () => {
   return (
-    <div className='pl-64 flex '>
-        <div className='w-[30%]'>
+    <div className='lg:pl-64 flex xs:flex-col lg:flex-row'>
+        <div className='lg:w-[30%]'>
         <GeneralDetails/>
         </div>
 
-        <div className='w-[70%]'>
+        <div className='Lg:w-[70%]'>
             <Notification/>
         </div>
     </div>

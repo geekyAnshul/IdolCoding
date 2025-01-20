@@ -20,7 +20,7 @@ function UpcommingClasses() {
 
   return (
    
-      <div className="bg-green-100 rounded-3xl border-2 border-zinc-200 p-6 pb-16 -mt-10 ">
+      <div className="bg-green-100 rounded-3xl border-2 border-zinc-200 p-6 pb-16  ">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-xl font-semibold text-gray-800">Upcoming Classes</h2>
