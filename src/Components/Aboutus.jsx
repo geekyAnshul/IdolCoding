@@ -51,12 +51,12 @@ function Aboutus() {
                 </div>
 
                 {/* Discover Section */}
-                <div className="bg-green-900 text-white py-10 ">
+                <div className="bg-green-900 text-white py-20 my-16 ">
                     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 ">
                         <motion.img
                             src={about5}
                             alt="Conference room"
-                            className="rounded-lg shadow-lg"
+                            className="rounded-3xl shadow-lg "
                             whileHover={{ scale: 1.05 }}
                             initial={{ opacity: 0, x: -50 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -126,9 +126,9 @@ function Aboutus() {
 
                 </div>
 
-                <JoinCommunity/>
+                <JoinCommunity />
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
