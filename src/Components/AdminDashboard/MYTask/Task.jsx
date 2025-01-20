@@ -19,7 +19,7 @@ const Task = () => {
         { name: "Python and its tricks", progress: 40, color: "#4db33d" }, // Dark green for MongoDB
     ];
     return (
-        <div className="flex flex-col lg:flex-row gap-4 p-4 ml-64 -mt-16 ">
+        <div className="flex flex-col lg:flex-row gap-4 p-4 lg:ml-64">
             {/* Assigned Tasks Section */}
             <div className=" rounded-3xl p-4 flex-1 border-2 border-[#C2B0B0]">
                 <div className=' flex border-b border-[#C2B0B0] px-2'>
@@ -117,19 +117,26 @@ const Task = () => {
                 </div>
 
                 {/* Help Section */}
-                <div className="bg-white rounded-3xl p-4 border-2 border-[#C2B0B0] justify-center items-center">
-                    <h2 className="text-3xl text-green-600 font-bold mb-4 text-center">Are you Feeling Stuck?</h2>
-                    <p className="text-gray-500 mb-4 text-center">
-                        Are you stuck on a task for some time and need help? Your mentor is only a message away!
-                    </p>
-                    <img src={Ask} alt="" className='mx-36 my-10' />
-                    <button
-                        onClick={() => alert('Ask Mentor clicked!')}
-                        className=" border-2 border-green-600  ml-10 text-green-500 py-3 px-40 rounded-3xl hover:bg-green-600"
-                    >
-                        Ask Mentor
-                    </button>
-                </div>
+                <div className="bg-white rounded-3xl p-6 border-2 border-[#C2B0B0] flex flex-col items-center text-center max-w-4xl mx-auto">
+  <h2 className="text-2xl md:text-3xl text-green-600 font-bold mb-4">
+    Are you Feeling Stuck?
+  </h2>
+  <p className="text-sm md:text-base text-gray-500 mb-6">
+    Are you stuck on a task for some time and need help? Your mentor is only a message away!
+  </p>
+  <img
+    src={Ask} 
+    alt="Illustration" 
+    className="w-3/4 md:w-1/2 my-6" 
+  />
+  <button
+    onClick={() => alert('Ask Mentor clicked!')}
+    className="border-2 border-green-600 text-green-500 py-3 px-8 md:px-16 lg:px-20 rounded-3xl hover:bg-green-600 hover:text-white transition"
+  >
+    Ask Mentor
+  </button>
+</div>
+
             </div>
         </div>
     );

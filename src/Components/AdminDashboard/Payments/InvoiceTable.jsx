@@ -36,7 +36,7 @@ const InvoiceTable = () => {
     ];
 
     return (
-        <div className="p-8 pl-64">
+        <div className="p-8 lg:pl-64 overflow-y-auto ">
 
             <div className=" flex bg-white justify-between shadow-md rounded-lg p-4">
                 <h2 className="text-xl font-bold mb-4">Invoices</h2>

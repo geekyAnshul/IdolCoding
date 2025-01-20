@@ -7,6 +7,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { GrGallery } from "react-icons/gr";
 import { RiCameraAiLine } from "react-icons/ri";
 import { FaMicrophoneAlt } from "react-icons/fa";
+import { AiOutlineUserAdd } from "react-icons/ai";
 
 const Messages = () => {
     const [chats, setChats] = useState([
@@ -36,12 +37,18 @@ const Messages = () => {
     };
 
     return (
-        <div className="flex h-screen ml-64 gap-4 -mt-10">
+        <div className="flex  xs:flex-col-reverse lg:flex-row h-screen lg:ml-64 gap-4 ">
             {/* Sidebar */}
-            <div className="w-1/4  border-r overflow-y-auto rounded-3xl border-2 border-green-300 ">
+            <div className="lg:w-1/4  border-r overflow-y-auto rounded-3xl border-2 border-green-300 ">
                 <div className="flex items-center justify-between p-4 border-b">
                     <h2 className="text-lg font-bold">Chats</h2>
-                    <button className="bg-green-500 text-white px-3 py-1 rounded-lg">Add</button>
+
+
+                    <button className="flex bg-green-500 text-white px-3 py-1 rounded-lg gap-2">
+                        <h1>Add</h1>
+                        <AiOutlineUserAdd className='mt-1'/>
+                    </button>
+
                 </div>
                 <input
                     type="text"
@@ -81,13 +88,13 @@ const Messages = () => {
                     <h3 className="font-bold flex-1">{activeChat.name}</h3>
                     <div className="flex gap-3">
                         <button className="text-gray-600 text-2xl">
-                        <FcVideoCall />
+                            <FcVideoCall />
                         </button>
                         <button className="text-gray-600 text-2xl">
-                        <IoCallOutline />
+                            <IoCallOutline />
                         </button>
                         <button className="text-gray-600 text-2xl">
-                        <BsThreeDots />
+                            <BsThreeDots />
                         </button>
                     </div>
                 </div>
@@ -119,9 +126,9 @@ const Messages = () => {
                             }
                         }}
                     />
-                    <GrGallery className='text-2xl text-green-600'/>
-                    <RiCameraAiLine className='text-2xl text-green-600'/>
-                    <FaMicrophoneAlt className='text-2xl text-green-600'/>
+                    <GrGallery className='text-2xl text-green-600' />
+                    <RiCameraAiLine className='text-2xl text-green-600' />
+                    <FaMicrophoneAlt className='text-2xl text-green-600' />
                 </div>
             </div>
         </div>

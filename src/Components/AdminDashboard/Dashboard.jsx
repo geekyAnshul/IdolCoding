@@ -34,7 +34,7 @@ function Dashboard({ activeTab }) {
 
                 {activeTab === 'messages' && (
                     <div>
-                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
                         <Messages />
                     </div>
                 )}
@@ -56,7 +56,7 @@ function Dashboard({ activeTab }) {
                 )}
                  {activeTab === 'payments' && (
                     <div>
-                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
                         <Payments/>
                     </div>
                 )}
@@ -78,7 +78,7 @@ function Dashboard({ activeTab }) {
 
                 {activeTab === 'my tasks' && (
                     <div>
-                        <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2>
+                        {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
                         <Task />
                     </div>
                 )}

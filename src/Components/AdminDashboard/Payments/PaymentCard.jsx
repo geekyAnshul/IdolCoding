@@ -24,7 +24,7 @@ const PaymentCard = () => {
     const dueAmounts = [80000.00, 80000.00];
 
     return (
-        <div className="flex flex-col lg:flex-row gap-4 p-4 pl-64 -mt-16 ">
+        <div className="flex flex-col lg:flex-row gap-4 p-4 lg:pl-64 ">
             {/* My Cards Section */}
             <div className="bg-gray-50 rounded-lg p-6 flex-1 border border-[#C2B0B0]">
                 <div className="flex justify-between items-center mb-4">
