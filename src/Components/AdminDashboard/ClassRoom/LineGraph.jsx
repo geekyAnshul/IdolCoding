@@ -88,7 +88,7 @@ function LineGraph() {
   };
 
   return (
-    <div className="p-4 bg-white border-2 border-gray-200 rounded-lg max-w-3xl  -mt-10">
+    <div className="p-4 bg-white border-2 border-gray-200 rounded-3xl w-3xl  -mt-10">
      <div className="flex justify-between items-center py-2">
      <h2 className="text-xl font-semibold text-green-700 ">
         Hours Spent <span className="block text-xs text-zinc-500  font-light">128 Hours</span>
@@ -128,7 +128,7 @@ function LineGraph() {
       <div className="flex gap-4 items-center p-2">
             {/* User Image */}
             <img
-              src="https://www.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1775889152.jpg"
+              src="https://image.freepik.com/free-photo/handsome-man-yellow-background_1368-33382.jpg"
               alt="User"
               className="w-14 h-14 cursor-pointer rounded-full object-cover border-2 border-green-500"
             />
