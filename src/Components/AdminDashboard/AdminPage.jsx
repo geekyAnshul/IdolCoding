@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
-import { LayoutDashboard, Package, Users, Map, Settings, LogOut, BookOpen, MessageCircleMore, CalendarDays, Lightbulb, BadgeIndianRupee, ClipboardCheck } from 'lucide-react';
+import { LayoutDashboard, Package, Users, Map , Sun, Settings, LogOut, BookOpen, MessageCircleMore, CalendarDays, Lightbulb, BadgeIndianRupee, ClipboardCheck } from 'lucide-react';
 import Sidebar from './Sidebar';
 import Dashboard from './Dashboard';
 import { FaSearch } from 'react-icons/fa';
 
 
-const AdminPage = () => {
+const AdminPage = ({name}) => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [searchTerm, setSearchTerm] = useState(""); // State to track input value
 
@@ -20,27 +20,27 @@ const AdminPage = () => {
     { id: 'messages', label: 'Messages', icon: <MessageCircleMore size={20} /> },
     { id: 'mentors', label: 'Mentors', icon: <Users size={20} /> },
     { id: 'events', label: 'Events', icon: <CalendarDays size={20} /> },
-    { id: 'community', label: 'Community', icon: <Lightbulb size={20} /> },
+    { id: 'community', label: 'Community', icon: <Sun  size={20} /> },
     { id: 'payments', label: 'Payments', icon: <BadgeIndianRupee size={20} /> },
     { id: 'my tasks', label: 'My Tasks', icon: <ClipboardCheck size={20} /> },
     { id: 'settings', label: 'Settings', icon: <Settings size={20} /> },
 
   ];
   return (
-    <div className="flex h-screen bg-white">
+    <div className="flex h-screen bg-white ">
       <Sidebar menuItems={menuItems} activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="flex-1 overflow-auto">
-        <nav className="bg-white px-6 py-3 flex justify-between items-center shadow-md shadow-gray-300">
+      <div className="flex-1 overflow-auto ">
+        <nav className="bg-white fixed w-full z-40 px-6 py-3 flex justify-between items-center shadow-md shadow-gray-300">
           <h1 className="text-xl font-medium text-gray-800 ml-64 hidden lg:block">Dashboard</h1>
 
-          <div className="flex items-center w-full max-w-md bg-[#fff9ee] rounded-full px-4 py-3">
+          <div className="flex items-center w-full xs:max-w-52  lg:max-w-md xs:ml-12 lg:ml-0  bg-[#fff9ee] rounded-full px-4  py-3">
             <FaSearch className="text-gray-300 text-md mr-3" /> {/* Search icon */}
             <input
               type="text"
               placeholder="Search Anything..."
               value={searchTerm}
               onChange={handleInputChange}
-              className="flex-grow bg-transparent focus:outline-none text-gray-700 text-md placeholder-gray-500"
+              className="flex-grow bg-transparent focus:outline-none text-gray-700 lg:text-md placeholder-gray-500"
             />
           </div>
 
@@ -70,7 +70,7 @@ const AdminPage = () => {
           </div>
         </nav>
 
-        <main className="p-6">
+        <main className="p-6 pt-24">
           <Dashboard activeTab={activeTab} />
         </main>
       </div>

@@ -9,7 +9,7 @@ const SettingMain = () => {
         <GeneralDetails/>
         </div>
 
-        <div className='Lg:w-[70%]'>
+        <div className='lg:w-[70%]'>
             <Notification/>
         </div>
     </div>

@@ -8,7 +8,7 @@ import CompletedCourse from "./ClassRoom/CompletedCourse";
 const ClassRoom = () => {
   return (
     <div className="lg:pl-64 ">
-      <div className="flex xs:flex-col lg:flex-row gap-10">
+      <div className="flex xs:flex-col lg:flex-row gap-6">
         <div className="lg:w-[60%]">
           <LineGraph />
         </div>

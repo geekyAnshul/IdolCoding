@@ -8,12 +8,12 @@ import UpcommingClasses from './DashboardCompo/UpcommingClasses';
 
 const DashboardPage = () => {
     return (
-        <div className=' lg:pl-64'>
+        <div className=' lg:pl-52'>
             <div className='max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 {/* Left Column */}
                 <div className='lg:col-span-2 space-y-4'>
                     {/* Welcome Banner */}
-                    <div className='flex bg-[#12b76a] p-6 rounded-lg shadow-md justify-between items-center'>
+                    <div className='flex bg-[#12b76a] p-6 rounded-xl shadow-md justify-between items-center'>
                         <div>
                             <h1 className='text-4xl font-bold text-white'>Welcome, Pratik</h1>
                             <p className='text-white mt-2'>
