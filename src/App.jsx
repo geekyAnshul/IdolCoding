@@ -7,6 +7,7 @@ import FindMentorPage from "./Components/FindMentorPage";
 import Mentorship from "./Components/MentorShip";
 import Aboutus from "./Components/Aboutus";
 import AdminPage from "./Components/AdminDashboard/AdminPage";
+import MentorsPage from "./Components/MentorsDashboard/MentorsPage";
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
         <Route path="/mentorship" element= {<Mentorship/>} />
         <Route path="/about-us" element= {<Aboutus/>} />
         <Route path="/students" element= {<AdminPage/>} />
-      
+        <Route path="/mentors" element= {<MentorsPage/>} />
+
       </Routes>
     </Router>
   );

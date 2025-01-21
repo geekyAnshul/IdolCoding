@@ -4,12 +4,13 @@ import { LayoutDashboard, Package, Users, Map , Sun, Settings, LogOut, BookOpen,
 import Sidebar from './Sidebar';
 import Dashboard from './Dashboard';
 import { FaSearch } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 
 const AdminPage = ({name}) => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [searchTerm, setSearchTerm] = useState(""); // State to track input value
-
+  const navigate = useNavigate();
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
     console.log(e.target.value); // Log the input value to the console
@@ -57,13 +58,16 @@ const AdminPage = ({name}) => {
             <div className="hidden lg:block">
               <h2 className="text-md font-medium text-gray-800">Anshul Namdev</h2>
               <select
-                className="hidden lg:block text-sm text-gray-600 bg-white  rounded-full cursor-pointer"
-              >
-                <option value="student">Student</option>
-                <option value="mentor">Mentor</option>
-                <option value="admin">Admin</option>
-              </select>
+  className="hidden lg:block text-sm text-gray-600 bg-white rounded-full cursor-pointer"
+  onChange={(e) => navigate(`/${e.target.value}`)} 
+>
+  <option value="students">Student</option>
+  <option value="mentors">Mentor</option>
+  <option value="admin">Admin</option>
+</select>
             </div>
+          
+
 
 
 
