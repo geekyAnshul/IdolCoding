@@ -1,10 +1,22 @@
+// import React from 'react'
+
+// const MainAdminSidebar = () => {
+//   return (
+//     <div>MainAdminSidebar</div>
+//   )
+// }
+
+// export default MainAdminSidebar
+
+
+
 
 
 
 import React, { useState } from "react";
 import { Compass, LogOut, Menu, X } from "lucide-react";
 
-function Sidebar({ menuItems, activeTab, setActiveTab }) {
+function MainAdminSidebar({ menuItems, activeTab, setActiveTab }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -76,5 +88,5 @@ function Sidebar({ menuItems, activeTab, setActiveTab }) {
   );
 }
 
-export default Sidebar;
+export default MainAdminSidebar;
 

@@ -1,6 +1,7 @@
+
 import React from 'react';
 
-function Notification() {
+function MainAdminNotification() {
   return (
     <div className="lg:pl-4 xs:mt-4 lg:mt-0">
       <div className="bg-stone-100 rounded-lg border-2 border-zinc-200 w-full max-w-[800px] p-6 pb-8 space-y-4">
@@ -78,4 +79,4 @@ function NotificationOption({ title, description }) {
   );
 }
 
-export default Notification;
+export default MainAdminNotification;

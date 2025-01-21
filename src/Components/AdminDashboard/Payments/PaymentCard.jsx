@@ -3,7 +3,6 @@
 // Import necessary React components
 import React from 'react';
 import { HiOutlineDotsVertical } from "react-icons/hi";
-import InvoiceTable from './InvoiceTable';
 
 const PaymentCard = () => {
     const cardsData = [
@@ -92,26 +91,6 @@ const PaymentCard = () => {
                     </div>
                 </div>
 
-                {/* Invoices */}
-                {/* <div className="bg-white shadow-md rounded-lg p-4">
-                    <h2 className="text-xl font-bold mb-4">Invoices</h2>
-                    <div className="flex justify-between items-center">
-                        <button
-                            onClick={() => alert('Filter clicked!')}
-                            className="flex items-center gap-2 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-200"
-                        >
-                            Filter
-                            <span className="text-lg">⚙️</span>
-                        </button>
-                        <button
-                            onClick={() => alert('Download All clicked!')}
-                            className="flex items-center gap-2 bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600"
-                        >
-                            Download All
-                            <span className="text-lg">⬇️</span>
-                        </button>
-                    </div>
-                </div> */}
             </div>
 
         </div>

@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
-import { LayoutDashboard, Package, Users, Map , Sun, Settings, LogOut, BookOpen, MessageCircleMore, CalendarDays, Lightbulb, BadgeIndianRupee, ClipboardCheck } from 'lucide-react';
+import { LayoutDashboard, Package, Users, Map, Sun, Settings, LogOut, BookOpen, MessageCircleMore, CalendarDays, Lightbulb, BadgeIndianRupee, ClipboardCheck } from 'lucide-react';
 import Sidebar from './Sidebar';
 import Dashboard from './Dashboard';
 import { FaSearch } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 
-const AdminPage = ({name}) => {
+const AdminPage = ({ name }) => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [searchTerm, setSearchTerm] = useState(""); // State to track input value
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const AdminPage = ({name}) => {
     { id: 'messages', label: 'Messages', icon: <MessageCircleMore size={20} /> },
     { id: 'mentors', label: 'Mentors', icon: <Users size={20} /> },
     { id: 'events', label: 'Events', icon: <CalendarDays size={20} /> },
-    { id: 'community', label: 'Community', icon: <Sun  size={20} /> },
+    { id: 'community', label: 'Community', icon: <Sun size={20} /> },
     { id: 'payments', label: 'Payments', icon: <BadgeIndianRupee size={20} /> },
     { id: 'my tasks', label: 'My Tasks', icon: <ClipboardCheck size={20} /> },
     { id: 'settings', label: 'Settings', icon: <Settings size={20} /> },
@@ -58,18 +58,14 @@ const AdminPage = ({name}) => {
             <div className="hidden lg:block">
               <h2 className="text-md font-medium text-gray-800">Anshul Namdev</h2>
               <select
-  className="hidden lg:block text-sm text-gray-600 bg-white rounded-full cursor-pointer"
-  onChange={(e) => navigate(`/${e.target.value}`)} 
->
-  <option value="students">Student</option>
-  <option value="mentors">Mentor</option>
-  <option value="admin">Admin</option>
-</select>
+                className="hidden lg:block text-sm text-gray-600 bg-white rounded-full cursor-pointer"
+                onChange={(e) => navigate(`/${e.target.value}`)}
+              >
+                <option value="students">Student</option>
+                <option value="mentors">Mentor</option>
+                <option value="admin">Admin</option>
+              </select>
             </div>
-          
-
-
-
 
           </div>
         </nav>

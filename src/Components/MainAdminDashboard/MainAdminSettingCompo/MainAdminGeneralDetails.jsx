@@ -1,8 +1,14 @@
-import React from 'react';
 
-function GeneralDetails() {
+import React from 'react';
+import { Plus } from 'lucide-react';
+
+function MainAdminGeneralDetails() {
   return (
     <div className="   ">
+
+
+
+
       <div className="bg-stone-100 h-3/4 rounded-lg border-2 border-gray-200 w-full max-w-sm pt-6 xs:pb-6 lg:pb-48 px-4">
         <nav className="flex flex-col space-y-4">
           <MenuItem text="General Detials" />
@@ -23,8 +29,8 @@ function MenuItem({ text, isActive = false }) {
   return (
     <button
       className={`text-left px-3 py-2 rounded-lg transition-colors text-xl ${isActive
-          ? 'text-emerald-500 font-medium'
-          : 'text-gray-700 hover:bg-gray-50 font-medium'
+        ? 'text-emerald-500 font-medium'
+        : 'text-gray-700 hover:bg-gray-50 font-medium'
         }`}
     >
       {text}
@@ -32,4 +38,4 @@ function MenuItem({ text, isActive = false }) {
   );
 }
 
-export default GeneralDetails;
+export default MainAdminGeneralDetails;
