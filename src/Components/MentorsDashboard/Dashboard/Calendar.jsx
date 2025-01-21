@@ -1,0 +1,100 @@
+import React, { useState } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FaAngleRight } from "react-icons/fa6";
+
+const Calendar = () => {
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  // Helper to get all days of a month
+  const getDaysInMonth = (year, month) => {
+    const firstDayOfMonth = new Date(year, month, 1);
+    const lastDayOfMonth = new Date(year, month + 1, 0);
+    const days = [];
+
+    // Fill days from the previous month
+    const firstDayWeekday = firstDayOfMonth.getDay();
+    for (let i = firstDayWeekday - 1; i >= 0; i--) {
+      const prevDate = new Date(year, month, -i);
+      days.push({ date: prevDate, isCurrentMonth: false });
+    }
+
+    // Fill days of the current month
+    for (let i = 1; i <= lastDayOfMonth.getDate(); i++) {
+      days.push({ date: new Date(year, month, i), isCurrentMonth: true });
+    }
+
+    // Fill days of the next month
+    const lastDayWeekday = lastDayOfMonth.getDay();
+    for (let i = 1; i < 7 - lastDayWeekday; i++) {
+      const nextDate = new Date(year, month + 1, i);
+      days.push({ date: nextDate, isCurrentMonth: false });
+    }
+
+    return days;
+  };
+
+  // Navigate between months
+  const changeMonth = (step) => {
+    setCurrentDate(
+      new Date(currentDate.getFullYear(), currentDate.getMonth() + step, 1)
+    );
+  };
+
+  // Formatters for display
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const year = currentDate.getFullYear();
+  const month = currentDate.getMonth();
+  const days = getDaysInMonth(year, month);
+
+  return (
+    <div className=" p-4 pb-8 pt-5 border-2 border-green-500 mt-4 rounded-3xl max-w-lg mx-auto">
+      {/* Header */}
+      <h1 className="text-green-500 text-3xl text-center font-semibold mb-6">Events Calendar</h1>
+      <div className="flex items-center justify-between  w-full mb-10">
+        <button
+          onClick={() => changeMonth(-1)}
+          className="p-1 bg-green-500 text-white rounded-full hover:bg-green-600"
+        >
+          <FiChevronLeft className="text-3xl"/>
+        </button>
+        <h2 className="text-xl font-semibold">
+          {months[month]} {year}
+        </h2>
+        <button
+          onClick={() => changeMonth(1)}
+          className="p-1 bg-green-500 text-white rounded-full hover:bg-green-600"
+        >
+         <FiChevronRight className="text-3xl"/>
+        </button>
+      </div>
+
+      {/* Weekdays */}
+      <div className="grid grid-cols-7 gap-3 w-full text-center font-bold text-gray-700">
+        {weekDays.map((day) => (
+          <div key={day}>{day}</div>
+        ))}
+      </div>
+
+      {/* Dates */}
+      <div className="grid grid-cols-7 gap-1 w-full text-center mt-2">
+        {days.map(({ date, isCurrentMonth }, index) => (
+          <div
+            key={index}
+            className={`p-2 rounded-full cursor-pointer ${isCurrentMonth ? "bg-white" : "bg-gray-200 text-gray-400"
+              } hover:bg-green-200`}
+            onClick={() => alert(`You clicked on ${date.toDateString()}`)}
+          >
+            {date.getDate()}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Calendar;
