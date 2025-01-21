@@ -8,7 +8,7 @@ import HomeTopMentors from "./HomeTopMentors";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
 // import { div } from "framer-motion/client";
-
+import svg from "../assets/svg.jpg"
 
 
 
@@ -55,7 +55,7 @@ const HomeHeroSection = () => {
   >
   
     <img
-      src="https://img.freepik.com/premium-photo/student-who-studies-online-educational-platform-enjoys-studying-ai-generated_964845-26.jpg"
+      src={svg}
       alt="Mentoring"
       className="absolute w-full h-full object-cover rounded-full"
     />
