@@ -4,7 +4,7 @@ import TopPerformerAndGraph from './StudentsMain/TopPerformerAndGraph'
 
 const StudentsMain = () => {
   return (
-    <div className='pl-64'>
+    <div className='lg:pl-64'>
       
       <TotalStudents/>
       <TopPerformerAndGraph/>

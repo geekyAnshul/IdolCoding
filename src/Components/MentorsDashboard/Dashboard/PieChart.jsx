@@ -48,7 +48,7 @@ const PieChart = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center  border-2 py-6 border-zinc-200 rounded-lg mt-4">
+    <div className="flex flex-col items-center justify-center  border-2 py-2 border-zinc-200 rounded-3xl mt-4">
       <h2 className="text-xl font-semibold mb-4 text-gray-800">
         Student Attendance
       </h2>

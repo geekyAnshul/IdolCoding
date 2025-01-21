@@ -21,16 +21,16 @@ const PaymentCard = () => {
     ];
 
     const receiveAmounts = [
-        { id: 1, name: 'Kathryn Murphy', amount: 80000, avatar: 'https://via.placeholder.com/40' },
-        { id: 2, name: 'Kathryn Murphy', amount: 80000, avatar: 'https://via.placeholder.com/40' },
+        { id: 1, name: 'Kathryn Murphy', amount: 80000, avatar: 'https://thumbs.dreamstime.com/b/handsome-young-businessman-portrait-his-office-casual-smiling-59688027.jpg' },
+        { id: 2, name: 'Kathryn Murphy', amount: 80000, avatar: 'https://img.freepik.com/premium-photo/male-smell-man-holding-bottle-perfumery-mans-perfume-concept-elegant-man-perfume-masculine-pe_265223-59770.jpg' },
     ];
 
     return (
         <div className="flex flex-col lg:flex-row gap-4 ">
             {/* My Cards Section */}
-            <div className="bg-gray-50 rounded-lg p-6 flex-1 border border-[#C2B0B0]">
+            <div className="bg-gray-50 rounded-lg p-6 flex-1 border-2 border-[#C2B0B0]">
                 <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-xl font-bold">My Cards</h2>
+                    <h2 className="text-xl font-medium">My Cards</h2>
                     <button
                         onClick={() => alert('Add More clicked!')}
                         className="text-green-600 hover:underline"
@@ -62,24 +62,11 @@ const PaymentCard = () => {
 
             {/* Right Sidebar */}
 
-            <div className="flex flex-col gap-4 w-full lg:w-1/3 rounded-xl text-white border border-[#C2B0B0]">
-                <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-lg font-semibold">Receive Amount</h2>
-                    <button className="text-gray-400 hover:text-gray-600">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-6 h-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M6.75 12h10.5m-5.25-5.25V12m0 0v5.25"
-                            />
-                        </svg>
+            <div className="flex flex-col gap-4 w-full lg:w-1/3 rounded-3xl text-white border-2 border-[#C2B0B0]">
+                <div className="flex justify-between items-center mb-4 bg-[#12B76A] py-4 px-2 rounded-t-2xl">
+                    <h2 className="text-lg font-semibold text-white">Receive Amount</h2>
+                    <button className="text-white text-4xl hover:text-gray-600">
+                        ...
                     </button>
                 </div>
                 <ul className="space-y-4">
