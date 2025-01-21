@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FaAngleRight } from "react-icons/fa6";
 
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -55,18 +57,18 @@ const Calendar = () => {
       <div className="flex items-center justify-between w-full mb-4">
         <button
           onClick={() => changeMonth(-1)}
-          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+          className="p-1 bg-green-500 text-white rounded-full hover:bg-green-600"
         >
-          Prev
+          <FiChevronLeft className="text-3xl"/>
         </button>
         <h2 className="text-xl font-semibold">
           {months[month]} {year}
         </h2>
         <button
           onClick={() => changeMonth(1)}
-          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+          className="p-1 bg-green-500 text-white rounded-full hover:bg-green-600"
         >
-          Next
+         <FiChevronRight className="text-3xl"/>
         </button>
       </div>
 

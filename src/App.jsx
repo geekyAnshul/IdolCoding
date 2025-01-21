@@ -17,7 +17,8 @@ function App() {
         <Route path="/find-a-mentor" element={<FindMentorPage />} />
         <Route path="/mentorship" element= {<Mentorship/>} />
         <Route path="/about-us" element= {<Aboutus/>} />
-        <Route path="/admin" element= {<AdminPage/>} />
+        <Route path="/students" element= {<AdminPage/>} />
+      
       </Routes>
     </Router>
   );

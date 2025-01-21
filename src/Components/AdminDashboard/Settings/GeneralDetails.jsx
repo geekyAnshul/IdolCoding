@@ -3,7 +3,7 @@ import React from 'react';
 function GeneralDetails() {
   return (
     <div className="   ">
-      <div className="bg-white h-3/4 rounded-lg border-2 border-gray-200 w-full max-w-sm pt-6 pb-32 px-4">
+      <div className="bg-stone-100 h-3/4 rounded-lg border-2 border-gray-200 w-full max-w-sm pt-6 xs:pb-6 lg:pb-48 px-4">
         <nav className="flex flex-col space-y-4">
           <MenuItem text="General Detials" />
           <MenuItem text="My Profile" />

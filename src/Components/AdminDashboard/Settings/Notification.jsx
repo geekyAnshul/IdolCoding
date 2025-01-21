@@ -3,7 +3,7 @@ import React from 'react';
 function Notification() {
   return (
     <div className="lg:pl-4 xs:mt-4 lg:mt-0">
-      <div className="bg-white rounded-lg border-2 border-zinc-200 w-full max-w-[800px] p-6 space-y-6">
+      <div className="bg-stone-100 rounded-lg border-2 border-zinc-200 w-full max-w-[800px] p-6 pb-8 space-y-4">
         {/* Main Notifications Section */}
         <div className="space-y-2">
           <h2 className="text-xl font-semibold text-gray-800">Notifications</h2>
@@ -13,13 +13,13 @@ function Notification() {
         </div>
 
         {/* Email Notifications Section */}
-        <div className="space-y-4">
+        <div className="space-y-4 p-4 rounded-xl bg-white border-2 border-zinc-200">
           <h3 className="font-medium text-gray-800">Email Notification</h3>
           <p className="text-gray-500 text-sm">
             Substances can send you email notification for any new direct message.
           </p>
           
-          <div className="space-y-3">
+          <div className="space-y-3 ">
             <NotificationOption 
               title="News and Update Settings"
               description="The Latest News about the Latest Features and Software update System"
@@ -36,7 +36,7 @@ function Notification() {
         </div>
 
         {/* More Activity Section */}
-        <div className="space-y-4">
+        <div className="space-y-4 p-4 rounded-xl bg-white border-2 border-zinc-200">
           <h3 className="font-medium text-gray-800">More Activity</h3>
           <p className="text-gray-500 text-sm">
             Substances can send you email notification for any new direct message.
