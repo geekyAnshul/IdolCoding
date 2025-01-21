@@ -36,19 +36,17 @@ function TotalStudents() {
     <div className="">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex justify-between items-center mb-2">
-          <div className="flex items-center gap-2">
-            <h1 className="text-gray-900 font-medium">Dashboard</h1>
-            <span className="text-gray-400">/</span>
-            <span className="text-emerald-500">Students</span>
-          </div>
-          <button className="flex items-center gap-2 bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors">
-            {/* <Plus className="w-4 h-4" /> */}
-            <span>Add New</span>
-            <Plus className="w-4 h-4 ml-1" />
-          </button>
-        </div>
-
+         <div className="flex justify-between items-center mb-4">
+                 <div className="flex items-center gap-2">
+                   <span className="text-gray-900 font-medium xs:text-sm lg:text-lg">Dashboard</span>
+                   <span className="text-gray-400">/</span>
+                   <span className="text-emerald-500 xs:text-sm lg:text-lg">Students</span>
+                 </div>
+                 <button className="bg-emerald-500 text-white px-2 lg:px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
+                   <Plus size={20} />
+                   Add New
+                 </button>
+               </div>
         {/* Table Section */}
         <div className="bg-white rounded-2xl  ">
           {/* Table Header */}

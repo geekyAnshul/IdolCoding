@@ -50,11 +50,11 @@ function ClassesAndAssignments() {
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center gap-2">
-            <span className="text-gray-900 font-medium">Dashboard</span>
+            <span className="text-gray-900 font-medium xs:text-xs lg:text-lg">Dashboard</span>
             <span className="text-gray-400">/</span>
-            <span className="text-emerald-500">Classroom</span>
+            <span className="text-emerald-500 xs:text-xs lg:text-lg">Classroom</span>
           </div>
-          <button className="bg-emerald-500 text-white px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
+          <button className="bg-emerald-500 text-white px-2 lg:px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
             <Plus size={20} />
             Add Class
           </button>
@@ -88,7 +88,7 @@ function ClassesAndAssignments() {
                       <span>{classItem.time}</span>
                     </div>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex flex-col lg:flex-row gap-2">
                     <button className="px-4 py-1.5 text-emerald-500 border border-emerald-500 rounded-lg text-sm hover:bg-emerald-50">
                       More Info
                     </button>

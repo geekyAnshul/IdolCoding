@@ -31,8 +31,8 @@ const PaymentChart = () => {
             {
                 label: 'Payments',
                 data: [500000, 400000, 900000, 300000],
-                backgroundColor: '#22c55e',
-                borderRadius: 5,
+                backgroundColor: '#12B76A',
+                borderRadius: 25,
             },
         ],
     };
@@ -99,10 +99,10 @@ const PaymentChart = () => {
     ];
 
     return (
-        <div className="flex flex-col gap-6 p-6">
+        <div className="flex flex-col gap-6 py-6">
             {/* Payments Section */}
             <div className="flex flex-col md:flex-row gap-6">
-                <div className="w-full md:w-2/3 bg-white shadow rounded-lg p-6">
+                <div className="w-full md:w-2/3 bg-white border-2 border-[#C2B0B0] rounded-lg p-6">
                     <div className="flex justify-between items-center mb-4">
                         <h2 className="text-lg font-semibold">Payments</h2>
                         <select
@@ -119,7 +119,7 @@ const PaymentChart = () => {
                 </div>
 
                 {/* Invoices Section */}
-                <div className="w-full md:w-1/3 bg-white shadow rounded-lg p-6">
+                <div className="w-full md:w-1/3 bg-white border-2 border-[#C2B0B0] rounded-lg p-6">
                     <div className="flex justify-between items-center mb-4">
                         <h2 className="text-lg font-semibold">Invoices</h2>
                         <select
@@ -136,17 +136,17 @@ const PaymentChart = () => {
                         {invoices.map((invoice) => (
                             <li
                                 key={invoice.id}
-                                className="flex justify-between items-center border rounded-lg p-4"
+                                className="flex justify-between items-center border-2 border-[#C2B0B0] rounded-lg p-4"
                             >
                                 <div className="flex items-center gap-4">
-                                    <div className="bg-green-100 p-3 rounded-full">
+                                    <div className="bg-white p-3 border-green-500 border-2 rounded-full">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             strokeWidth={1.5}
                                             stroke="currentColor"
-                                            className="w-6 h-6 text-green-500"
+                                            className="w-6 h-6 text-blue-500"
                                         >
                                             <path
                                                 strokeLinecap="round"

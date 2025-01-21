@@ -9,7 +9,7 @@ const ClassRoom = () => {
     <div className='lg:pl-64'>
           <ClassesAndAssignments/>
 
-          <div className='flex gap-6 '>
+          <div className='flex flex-col lg:flex-row gap-6 '>
             <div className='lg:w-[50%]'>
             <UpCommingClasses/>
             </div>

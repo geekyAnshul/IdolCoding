@@ -50,21 +50,21 @@ const MainAdminPage = ({ name }) => {
           <div className="flex gap-2 items-center">
             {/* User Image */}
             <img
-              src="https://www.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1775889152.jpg"
+              src="https://wallpaperaccess.com/full/1311185.jpg"
               alt="User"
               className="w-10 h-10 cursor-pointer rounded-full object-cover"
             />
 
             {/* User Info (Visible on larger screens) */}
             <div className="hidden lg:block">
-              <h2 className="text-md font-medium text-gray-800">Anshul Namdev</h2>
+              <h2 className="text-md font-medium text-gray-800">Albert Flore</h2>
               <select
                 className="hidden lg:block text-sm text-gray-600 bg-white rounded-full cursor-pointer"
                 onChange={(e) => navigate(`/${e.target.value}`)}
-              >
+              > <option value="admin">Admin</option>
                 <option value="students">Student</option>
                 <option value="mentors">Mentor</option>
-                <option value="admin">Admin</option>
+               
               </select>
             </div>
 

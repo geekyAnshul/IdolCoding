@@ -41,18 +41,17 @@ const Messages = () => {
 
     return (
         <div className='lg:pl-64'>
-        <div className="flex justify-between items-center mb-4">
-          <div className="flex items-center gap-2">
-            <span className="text-gray-900 font-medium">Dashboard</span>
-            <span className="text-gray-400">/</span>
-            <span className="text-emerald-500">Messages</span>
-          </div>
-          <button className="bg-emerald-500 text-white px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
-            
-            Add New
-            <Plus size={20} className='rounded-full border02 border-white text-7xl' />
-          </button>
-        </div>
+          <div className="flex justify-between items-center mb-4">
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-900 font-medium xs:text-sm lg:text-lg">Dashboard</span>
+                    <span className="text-gray-400">/</span>
+                    <span className="text-emerald-500 xs:text-sm lg:text-lg">Messages</span>
+                  </div>
+                  <button className="bg-emerald-500 text-white px-2 lg:px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
+                    <Plus size={20} />
+                    Add New
+                  </button>
+                </div>
         <div className="flex  xs:flex-col-reverse lg:flex-row h-screen gap-4 ">
 
 

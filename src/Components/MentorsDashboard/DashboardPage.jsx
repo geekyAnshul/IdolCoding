@@ -10,7 +10,7 @@ const DashboardPage = () => {
     <div className='lg:pl-64'>
         <CardsSection/>
 
-        <div className='flex gap-2 '>
+        <div className='flex flex-col lg:flex-row gap-2 '>
             <div className='lg:w-[70%]'>
             <AreaGraph/>
             </div>
@@ -19,7 +19,7 @@ const DashboardPage = () => {
             </div>
         </div>
 
-        <div className='flex gap-2 '>
+        <div className='flex flex-col lg:flex-row gap-2 '>
             <div className='lg:w-[70%]'>
             <UpCommingLectures/>
             </div>
