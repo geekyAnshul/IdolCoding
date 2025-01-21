@@ -7,10 +7,11 @@ import EventsMain from './EventsMainMentors.jsx';
 import SettingMain from './SettingMain';
 import Messages from './Message/Messages';
 import Community from './Community/Community.jsx'
-import Payments from './Payments.jsx'
-import Task from './MYTask/Task'
+// import Task from './MYTask/Task'
 import StudentsMain from './StudentsMain.jsx';
 import EventsMainMentors from './EventsMainMentors.jsx';
+import MentorPayment from './MentorPayment.jsx';
+import MentorTask from './MentorTask.jsx';
 
 
 function RoutesPage({ activeTab }) {
@@ -59,7 +60,7 @@ function RoutesPage({ activeTab }) {
                  {activeTab === 'payments' && (
                     <div>
                         {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
-                        <Payments/>
+                        <MentorPayment/>
                     </div>
                 )}
 
@@ -81,7 +82,7 @@ function RoutesPage({ activeTab }) {
                 {activeTab === 'my tasks' && (
                     <div>
                         {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
-                        <Task />
+                        <MentorTask/>
                     </div>
                 )}
 

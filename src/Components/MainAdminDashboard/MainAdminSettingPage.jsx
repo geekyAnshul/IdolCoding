@@ -1,14 +1,4 @@
 
-// import React from 'react'
-
-// const MainAdminSettingPage = () => {
-//   return (
-//     <div>MainAdminSettingPage</div>
-//   )
-// }
-
-// export default MainAdminSettingPage
-
 
 import React from 'react'
 import MainAdminGeneralDetails from './MainAdminSettingCompo/MainAdminGeneralDetails'

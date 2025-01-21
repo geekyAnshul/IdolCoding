@@ -1,23 +1,13 @@
-// import React from 'react'
-
-// const MainAdminDashboard = () => {
-//   return (
-//     <div>MainAdminDashboard</div>
-//   )
-// }
-// export default MainAdminDashboard
-
-
 
 import React, { useState } from 'react';
 import MainAdminDashboardPage from './MainAdminDashboardCompo/MainAdminDashboardPage';
 import MainAdminMessagePage from './MainAdminMessageCompo/MainAdminMessagePage';
 import MainAdminStudentPage from './MainAdminStudentsCompo/MainAdminStudentPage';
 import MaiinAdminMentorsPage from './MainAdminMentorsCompo/MaiinAdminMentorsPage';
-import MainAdminEveentsPage from './MainAdminEventsCompo/MainAdminEveentsPage';
 import MainAdminCommunityPage from './MainAdminCommunityPage';
 import MainAdminSettingPage from './MainAdminSettingPage';
 import MainAdminPaymentsPage from './MainAdminPaymentsPage';
+import MainAdminEventsPage from './MainAdminEventsPage';
 
 
 function MainAdminDashboard({ activeTab }) {
@@ -60,7 +50,7 @@ function MainAdminDashboard({ activeTab }) {
                  {activeTab === 'events' && (
                     <div>
                         {/* <h2 className="text-2xl font-semibold mb-6 text-indigo-700">Add New Package</h2> */}
-                        <MainAdminEveentsPage />
+                        <MainAdminEventsPage />
                     </div>
                 )}
                  {activeTab === 'community' && (

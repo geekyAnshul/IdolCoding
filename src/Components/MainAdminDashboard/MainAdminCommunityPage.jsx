@@ -1,8 +1,11 @@
 import React from 'react'
+import MainAdminCommunity from './MainAdminCommunityCompo/MainAdminCommunity'
 
 const MainAdminCommunityPage = () => {
   return (
-    <div>MainAdminCommunityPage</div>
+    <div>
+        <MainAdminCommunity />
+    </div>
   )
 }
 
