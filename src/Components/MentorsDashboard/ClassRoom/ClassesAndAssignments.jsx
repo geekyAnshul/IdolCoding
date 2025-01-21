@@ -54,7 +54,7 @@ function ClassesAndAssignments() {
             <span className="text-gray-400">/</span>
             <span className="text-emerald-500 xs:text-xs lg:text-lg">Classroom</span>
           </div>
-          <button className="bg-emerald-500 text-white px-2 lg:px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
+          <button className=" bg-gradient-to-r from-emerald-700 to-emerald-600  text-white px-2 lg:px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
             <Plus size={20} />
             Add Class
           </button>
@@ -63,7 +63,7 @@ function ClassesAndAssignments() {
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Today Classes */}
-          <div className="bg-white rounded-2xl  p-6 border-2 border-green-500">
+          <div className="bg-white rounded-2xl  p-6 border-2 border-emerald-500">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-lg font-medium text-gray-900">Today Classes</h2>
               <button className="text-gray-400 hover:text-gray-600">
@@ -92,7 +92,7 @@ function ClassesAndAssignments() {
                     <button className="px-4 py-1.5 text-emerald-500 border border-emerald-500 rounded-lg text-sm hover:bg-emerald-50">
                       More Info
                     </button>
-                    <button className="px-4 py-1.5 bg-emerald-500 text-white rounded-lg text-sm hover:bg-emerald-600">
+                    <button className="px-4 py-1.5  bg-gradient-to-r from-emerald-700 to-emerald-600  text-white rounded-lg text-sm hover:bg-emerald-600">
                       Start
                     </button>
                   </div>
@@ -126,7 +126,7 @@ function ClassesAndAssignments() {
                       {assignment.status}
                     </p>
                   </div>
-                  <button className="px-4 py-1.5 bg-emerald-500 text-white rounded-lg text-sm hover:bg-emerald-600">
+                  <button className="px-4 py-1.5  bg-gradient-to-r from-emerald-700 to-emerald-600  text-white rounded-lg text-sm hover:bg-emerald-600">
                     Assign
                   </button>
                 </div>

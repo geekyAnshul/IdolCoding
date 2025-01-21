@@ -54,11 +54,11 @@ const Calendar = () => {
   return (
     <div className=" p-4 pb-8 pt-5 border-2 border-green-500 mt-4 rounded-3xl max-w-lg mx-auto">
       {/* Header */}
-      <h1 className="text-green-500 text-3xl text-center font-semibold mb-6">Events Calendar</h1>
+      <h1 className="text-emerald-500 text-3xl text-center font-semibold mb-6">Events Calendar</h1>
       <div className="flex items-center justify-between  w-full mb-10">
         <button
           onClick={() => changeMonth(-1)}
-          className="p-1 bg-green-500 text-white rounded-full hover:bg-green-600"
+          className="p-1  bg-gradient-to-r from-emerald-700 to-emerald-500  text-white rounded-full hover:bg-green-600"
         >
           <FiChevronLeft className="text-3xl"/>
         </button>
@@ -67,7 +67,7 @@ const Calendar = () => {
         </h2>
         <button
           onClick={() => changeMonth(1)}
-          className="p-1 bg-green-500 text-white rounded-full hover:bg-green-600"
+          className="p-1  bg-gradient-to-r from-emerald-700 to-emerald-500  text-white rounded-full hover:bg-green-600"
         >
          <FiChevronRight className="text-3xl"/>
         </button>

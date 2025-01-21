@@ -8,28 +8,28 @@ const Notification = () => {
       id: 1,
       name: "Jane Cooper",
       action: "send the follow request",
-      image: "https://th.bing.com/th/id/OIP.PoFmgWG0dZXmssCtCiBk9QHaLH?rs=1&pid=ImgDetMain",
+      image: "https://www.shutterstock.com/image-photo/young-handsome-man-beard-wearing-600nw-1768126784.jpg",
       type: "followRequest",
     },
     {
       id: 2,
       name: "Programer",
       action: "send the follow request",
-      image: "https://th.bing.com/th/id/OIP.PoFmgWG0dZXmssCtCiBk9QHaLH?rs=1&pid=ImgDetMain",
+      image: "https://img.freepik.com/premium-photo/man-with-beard-green-shirt-keeping-arms-crossed-while-smiling_1368-34114.jpg",
       type: "followRequest",
     },
     {
       id: 4,
       name: "Braily",
       action: "likes your post and comment also",
-      image: "https://th.bing.com/th/id/OIP.PoFmgWG0dZXmssCtCiBk9QHaLH?rs=1&pid=ImgDetMain",
+      image: "https://img.freepik.com/premium-photo/cheerful-bearded-man-portrait-blue-background_818261-12611.jpg",
       type: "likeComment",
     },
     {
       id: 3,
       name: "Braily",
       action: "likes your post and comment also",
-      image: "https://th.bing.com/th/id/OIP.PoFmgWG0dZXmssCtCiBk9QHaLH?rs=1&pid=ImgDetMain",
+      image: "https://img.freepik.com/premium-photo/portrait-handsome-young-man-sweater-eyeglasses-generative-ai_170984-14575.jpg",
       type: "likeComment",
     },
   ]);
@@ -63,7 +63,7 @@ const Notification = () => {
             <img
               src={notification.image}
               alt={notification.name}
-              className="w-10 h-10 rounded-full"
+              className="w-10 h-10 rounded-full object-cover"
             />
             <div className="flex-1">
               <p className="text-sm">

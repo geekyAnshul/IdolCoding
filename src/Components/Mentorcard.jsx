@@ -4,8 +4,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import query from '../assets/query.jpg';
 import { IoBriefcaseOutline } from "react-icons/io5";
-
+import { useNavigate } from "react-router-dom";
 const MentorCard = () => {
+    const navigate = useNavigate();
     const mentors = [
         {
             name: "Mr. Wade Warren",
@@ -169,7 +170,7 @@ const MentorCard = () => {
                         we invite you to be part of our vibrant community and together, let's
                         unlock your full potential.
                     </p>
-                    <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
+                    <button onClick={()=>{navigate('/launching')}} className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
                         Get In Touch
                     </button>
                 </div>
@@ -197,7 +198,7 @@ const MentorCard = () => {
                             serve the needs of our users. We listen to feedback, adapt to
                             changing trends, and strive for excellence in everything we do.
                         </p>
-                        <button className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 mt-8 rounded">
+                        <button onClick={()=>{navigate('/launching')}} className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 mt-8 rounded">
                             Join Now
                         </button>
                     </div>

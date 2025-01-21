@@ -28,7 +28,7 @@ const lectures = [
 function UpCommingLectures() {
   return (
     <div className=" py-4">
-      <div className=" bg-emerald-200 rounded-xl border-2 border-zinc-200 overflow-hidden">
+      <div className="  bg-gradient-to-r from-emerald-100 to-emerald-100  rounded-xl border-2 border-zinc-200 overflow-hidden">
         <div className="p-4 flex justify-between items-center border-b">
           <h2 className="text-lg font-medium text-gray-900">Upcoming Lectures</h2>
           <button className="text-gray-500 hover:text-gray-700">

@@ -9,6 +9,7 @@ import Aboutus from "./Components/Aboutus";
 import AdminPage from "./Components/AdminDashboard/AdminPage";
 import MentorsPage from "./Components/MentorsDashboard/MentorsPage";
 import MainAdminPage from "./Components/MainAdminDashboard/MainAdminPage";
+import Launchingpage from "./Components/LaunchingPage";
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
         <Route path="/admin" element= {<MainAdminPage/>} />
       
         <Route path="/mentors" element= {<MentorsPage/>} />
-
+        <Route path="/launching" element= {<Launchingpage/>} />
       </Routes>
     </Router>
   );

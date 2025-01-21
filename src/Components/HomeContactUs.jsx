@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Contactus from "../assets/contactus.png"
 function HomeContactUs() {
   const [formData, setFormData] = useState({
+    name:"",
     email: "",
     phone: "",
     message: "",
@@ -16,7 +17,7 @@ function HomeContactUs() {
     e.preventDefault();
     console.log("Form Submitted: ", formData);
     alert("Form Submitted!");
-    setFormData({ email: "", phone: "", message: "" });
+    setFormData({name:"", email: "", phone: "", message: "" });
   };
 
   return (
@@ -38,6 +39,15 @@ function HomeContactUs() {
         <div className="w-full md:w-1/2 bg-green-500 text-white p-6 rounded-lg">
           <h2 className="text-2xl font-semibold mb-4">Get in touch</h2>
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Name"
+              className="w-full p-3 rounded bg-white text-black outline-none focus:ring-2 focus:ring-green-300"
+              required
+            />
             <input
               type="email"
               name="email"

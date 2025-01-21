@@ -10,6 +10,7 @@ import Footer from './Footer';
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import Navbar from './Navbar';
 import JoinCommunity from './JoinCommunity';
+import { useNavigate } from 'react-router-dom';
 
 const brands = [
     {
@@ -56,6 +57,7 @@ const FindMentorPage = () => {
     fresherExp: ''
   });
 
+  const navigate = useNavigate()
   const domains = ['All Domains', 'Engineering', 'Web Development', 'Data Science', 'Digital Marketing'];
 
   const handleFilterChange = (key, value) => {
@@ -202,10 +204,10 @@ const FindMentorPage = () => {
 
   {/* Buttons */}
   <div className="flex flex-col md:flex-row justify-center gap-4">
-    <button className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
       View Profile
     </button>
-    <button className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
       Book Now
     </button>
   </div>
@@ -256,10 +258,10 @@ const FindMentorPage = () => {
 
   {/* Buttons */}
   <div className="flex flex-col md:flex-row justify-center gap-4">
-    <button className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
       View Profile
     </button>
-    <button className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
       Book Now
     </button>
   </div>
@@ -310,10 +312,10 @@ const FindMentorPage = () => {
 
   {/* Buttons */}
   <div className="flex flex-col md:flex-row justify-center gap-4">
-    <button className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
       View Profile
     </button>
-    <button className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
       Book Now
     </button>
   </div>
@@ -364,10 +366,10 @@ const FindMentorPage = () => {
 
   {/* Buttons */}
   <div className="flex flex-col md:flex-row justify-center gap-4">
-    <button className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
       View Profile
     </button>
-    <button className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
       Book Now
     </button>
   </div>
@@ -418,10 +420,10 @@ const FindMentorPage = () => {
 
   {/* Buttons */}
   <div className="flex flex-col md:flex-row justify-center gap-4">
-    <button className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
       View Profile
     </button>
-    <button className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
       Book Now
     </button>
   </div>
@@ -472,10 +474,10 @@ const FindMentorPage = () => {
 
   {/* Buttons */}
   <div className="flex flex-col md:flex-row justify-center gap-4">
-    <button className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full hover:bg-zinc-100 text-green-500 border-green-500 border-2 font-semibold py-3 px-4 rounded-lg">
       View Profile
     </button>
-    <button className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
+    <button onClick={()=>{navigate('/launching')}} className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
       Book Now
     </button>
   </div>
@@ -483,7 +485,7 @@ const FindMentorPage = () => {
 
 
       <div className="w-[80vw] mt-10 flex justify-center items-center">
-  <button className="text-green-500 border-2 border-green-500 px-6 py-3 w-72 rounded-lg  hover:text-white hover:bg-green-500 transition-all duration-300">
+  <button onClick={()=>{navigate('/launching')}} className="text-green-500 border-2 border-green-500 px-6 py-3 w-72 rounded-lg  hover:text-white hover:bg-green-500 transition-all duration-300">
     Explore More
   </button>
 </div>
@@ -534,7 +536,7 @@ const FindMentorPage = () => {
         </div>
         <h1 className="text-green-500 text-4xl font-bold">+500</h1>
        </div>
-        <button className="bg-green-500 hover:bg-green-700 w-72 text-white font-bold py-4 px-4 rounded mt-10">Get Started</button>
+        <button onClick={()=>{navigate('/launching')}} className="bg-green-500 hover:bg-green-700 w-72 text-white font-bold py-4 px-4 rounded mt-10">Get Started</button>
       </div>
       
         {/* Replace with your image source */}

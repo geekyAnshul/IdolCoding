@@ -2,10 +2,11 @@ import React from 'react'
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
      const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    
+       const navigate = useNavigate();
       const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
       };
@@ -16,7 +17,7 @@ const Navbar = () => {
   return (
     <div>
            <nav className="xs:px-10 lg:px-32  w-full mx-auto flex items-center justify-between  py-8 bg-[#effff8]">
-      <div className="text-2xl font-semibold text-green-500">CODINGIDOL</div>
+      <div onClick={()=>{navigate('/launching')}}  className="text-2xl font-semibold cursor-pointer text-green-500">CODINGIDOL</div>
 
       {/* Desktop Menu */}
       <div className="hidden lg:flex space-x-8 font-medium">
@@ -54,7 +55,7 @@ const Navbar = () => {
           About Us
         </NavLink>
       </div>
-      <button className="hidden md:block px-10 py-2 bg-[#12B76A] text-white rounded-lg hover:bg-green-600">
+      <button onClick={()=>{navigate('/launching')}} className="hidden md:block px-10 py-2 bg-[#12B76A] text-white rounded-lg hover:bg-green-600">
         Sign Up
       </button>
 
@@ -122,7 +123,7 @@ const Navbar = () => {
           >
             About Us
           </NavLink>
-          <button className="px-10 py-2 bg-[#12B76A] text-white rounded-lg hover:bg-green-600">
+          <button onClick={()=>{navigate('/launching')}} className="px-10 py-2 bg-[#12B76A] text-white rounded-lg hover:bg-green-600">
             Sign Up
           </button>
         </div>

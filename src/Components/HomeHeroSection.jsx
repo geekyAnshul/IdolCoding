@@ -6,12 +6,14 @@ import { FaUserTie } from "react-icons/fa6";
 import { RiVideoAiLine } from "react-icons/ri";
 import HomeTopMentors from "./HomeTopMentors";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
 // import { div } from "framer-motion/client";
 
 
 
 
 const HomeHeroSection = () => {
+  const navigate = useNavigate();
   return (
     <>
     <div>
@@ -33,10 +35,10 @@ const HomeHeroSection = () => {
             success story begins here.
           </p>
           <div className="flex justify-center lg:justify-start space-x-4">
-            <button className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
+            <button onClick={()=>{navigate('/launching')}} className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
               Get Started
             </button>
-            <button className="px-6 py-3 bg-white text-green-600 border border-green-600 rounded-lg hover:bg-green-50">
+            <button onClick={()=>{navigate('/launching')}} className="px-6 py-3 bg-white text-green-600 border border-green-600 rounded-lg hover:bg-green-50">
               Learn More
             </button>
           </div>

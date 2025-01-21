@@ -19,7 +19,7 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 import HomeContactUs from "./HomeContactUs";
 import Footer from "./Footer";
 import JoinCommunity from "./JoinCommunity";
-
+import { useNavigate } from "react-router-dom";
 
 
 const mentors = [
@@ -109,6 +109,7 @@ const brands = [
   ];
 
 const HomeTopMentors = () => {
+  const navigate = useNavigate();
   return (
     <>
 
@@ -147,7 +148,7 @@ const HomeTopMentors = () => {
                 <p className="text-sm text-gray-600 mt-2 line-clamp-3">
                   {mentor.description}
                 </p>
-                <button className="mt-5 bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition-all duration-300 w-full">
+                <button onClick={()=>{navigate('/launching')}} className="mt-5 bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition-all duration-300 w-full">
                   Book A Free Trial
                 </button>
               </div>
@@ -222,7 +223,7 @@ const HomeTopMentors = () => {
         <h1 className="text-green-500 text-sm font-normal text-center">More that 200+ mentors</h1>
       </div>
       {/* Become a Mentor Button */}
-      <button className=" xs:mt-10 lg:-mt-10 bg-green-500 text-white py-4 px-4 rounded hover:bg-green-600 text-center md:ml-10">
+      <button onClick={()=>{navigate('/launching')}} className=" xs:mt-10 lg:-mt-10 bg-green-500 text-white py-4 px-4 rounded hover:bg-green-600 text-center md:ml-10">
         Become a Mentor
       </button>
     </div>
@@ -363,7 +364,7 @@ const HomeTopMentors = () => {
   </div>
 
   <div className="w-[80vw] mt-10 flex justify-center items-center">
-  <button className="text-white bg-green-500 px-6 py-3 w-72 rounded-lg  hover:bg-green-600 transition-all duration-300">
+  <button onClick={()=>{navigate('/launching')}} className="text-white bg-green-500 px-6 py-3 w-72 rounded-lg  hover:bg-green-600 transition-all duration-300">
     Explore More
   </button>
 </div>

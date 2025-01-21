@@ -57,9 +57,9 @@ function MenteesAndCourses() {
               </div>
 
               {/* Progress Bar */}
-              <div className="h-2 bg-emerald-100 rounded-full overflow-hidden">
+              <div className="h-3 bg-emerald-100 rounded-full overflow-hidden">
                 <div 
-                  className="h-full bg-gradient-to-r from-emerald-500 to-emerald-300"
+                  className="h-full bg-gradient-to-r from-emerald-500 to-emerald-700"
                   style={{ width: `${mentee.progress}%` }}
                 />
               </div>

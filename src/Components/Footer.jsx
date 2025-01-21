@@ -50,19 +50,19 @@ const Footer = () => {
               <i className="fab fa-twitter"></i>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/codingidol"
               className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-all"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/codingidol"
               className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-all"
             >
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/codingidol/"
               className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-all"
             >
               <i className="fab fa-instagram"></i>

@@ -47,7 +47,7 @@ const Messages = () => {
                     <span className="text-gray-400">/</span>
                     <span className="text-emerald-500 xs:text-sm lg:text-lg">Messages</span>
                   </div>
-                  <button className="bg-emerald-500 text-white px-2 lg:px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
+                  <button className=" bg-gradient-to-r from-emerald-700 to-emerald-600  text-white px-2 lg:px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
                     <Plus size={20} />
                     Add New
                   </button>
@@ -61,7 +61,7 @@ const Messages = () => {
                     <h2 className="text-lg font-bold">Chats</h2>
 
 
-                    <button className="flex bg-green-500 text-white px-3 py-1 rounded-lg gap-2">
+                    <button className="flex  bg-gradient-to-r from-emerald-700 to-emerald-600  text-white px-3 py-1 rounded-lg gap-2">
                         <h1>Add</h1>
                         <AiOutlineUserAdd className='mt-1' />
                     </button>
@@ -128,7 +128,7 @@ const Messages = () => {
                             className={`flex ${msg.type === 'sent' ? 'justify-end' : ''} mb-4 text-sm`}
                         >
                             <div
-                                className={`p-2 rounded-lg max-w-xs ${msg.type === 'sent' ? 'bg-green-500 text-white' : 'bg-gray-200'}`}
+                                className={`p-2 rounded-lg max-w-xs ${msg.type === 'sent' ? ' bg-gradient-to-r from-emerald-700 to-emerald-600  text-white' : 'bg-gray-200'}`}
                             >
                                 {msg.text}
                             </div>

@@ -10,8 +10,11 @@ import MentorCard from "./Mentorcard";
 import JoinCommunity from "./JoinCommunity";
 import HomeContact from "./HomeContactUs.jsx";
 import Footer from "./Footer.jsx";
+import { useNavigate } from "react-router-dom";
 const Mentorship = () => {
+    const navigate = useNavigate();
     const mentors = [
+
         {
             name: "Mr. Wade Warren",
             image: "https://static.vecteezy.com/system/resources/previews/025/474/309/large_2x/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg",
@@ -88,7 +91,7 @@ const Mentorship = () => {
 
 
                     <div className="flex justify-center md:justify-start space-x-4">
-                        <button className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                        <button onClick={()=>{navigate('/launching')}} className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
                             Be a Mentor
                         </button>
                     </div>

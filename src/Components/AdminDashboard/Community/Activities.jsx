@@ -9,7 +9,7 @@ const Activities = () => {
             role: "Mentee",
             time: "43min ago",
             text: "Excited to have the badge. I am doing all my hard work for the last 7 days",
-            image: "https://th.bing.com/th/id/OIP.zI-hfcUXnrffkj-E3_kXrwHaGX?rs=1&pid=ImgDetMain", // Replace with actual image URL
+            image: "https://wallpapers.com/images/hd/4k-bitcoin-8ac6tlvi0psj4b23.jpg", // Replace with actual image URL
             likes: 1,
             comments: 2,
         },
@@ -19,7 +19,7 @@ const Activities = () => {
             role: "Mentee",
             time: "43min ago",
             text: "Excited to have the badge. I am doing all my hard work for the last 7 days",
-            image: "https://th.bing.com/th/id/OIP.zI-hfcUXnrffkj-E3_kXrwHaGX?rs=1&pid=ImgDetMain", // Replace with actual image URL
+            image: "https://wallpapers.com/images/hd/4k-bitcoin-8ac6tlvi0psj4b23.jpg", // Replace with actual image URL
             likes: 1,
             comments: 2,
         },
@@ -47,9 +47,9 @@ const Activities = () => {
                             {/* Post Header */}
                             <div className="flex items-center mb-4">
                                 <img
-                                    src="https://th.bing.com/th/id/OIP.zI-hfcUXnrffkj-E3_kXrwHaGX?rs=1&pid=ImgDetMain" // Replace with user's avatar URL
+                                    src="https://img.freepik.com/premium-photo/cheerful-bearded-man-portrait-blue-background_818261-12610.jpg" // Replace with user's avatar URL
                                     alt="User avatar"
-                                    className="w-12 h-12 rounded-full"
+                                    className="w-12 h-12 rounded-full object-cover"
                                 />
                                 <div className="ml-3">
                                     <p className="font-bold text-gray-800">{post.name}</p>

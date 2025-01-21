@@ -13,10 +13,10 @@ function CardsSection() {
         <p className="text-md text-zinc-800 font-normal"><span className="text-md text-emerald-500">12 new </span> student enrolled.</p>
       </div>
 
-      {/* Stats Cards Grid */}
+     
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {/* Total Earning Card */}
-        <div className="bg-emerald-500 rounded-xl p-4 text-white relative overflow-hidden">
+       
+        <div className=" bg-gradient-to-r from-emerald-700 to-emerald-500 rounded-xl p-4 text-white relative overflow-hidden">
           <div className="flex justify-between items-start">
             <div>
               <p className="text-emerald-100 text-sm mb-1">Total Earning</p>
@@ -29,7 +29,7 @@ function CardsSection() {
         </div>
 
         {/* Total Enrolled Students Card */}
-        <div className="bg-emerald-500 rounded-xl p-4 text-white relative overflow-hidden">
+        <div className=" bg-gradient-to-r from-emerald-700 to-emerald-500  rounded-xl p-4 text-white relative overflow-hidden">
           <div className="flex justify-between items-start">
             <div>
               <p className="text-emerald-100 text-sm mb-1">Total Enrolled Students</p>
@@ -42,7 +42,7 @@ function CardsSection() {
         </div>
 
         {/* Total Employment Hours Card */}
-        <div className="bg-emerald-500 rounded-xl p-4 text-white relative overflow-hidden">
+        <div className=" bg-gradient-to-r from-emerald-700 to-emerald-500  rounded-xl p-4 text-white relative overflow-hidden">
           <div className="flex justify-between items-start">
             <div>
               <p className="text-emerald-100 text-sm mb-1">Total Employment hours</p>
