@@ -15,7 +15,7 @@ import MainAdminMessagePage from './MainAdminMessageCompo/MainAdminMessagePage';
 import MainAdminStudentPage from './MainAdminStudentsCompo/MainAdminStudentPage';
 import MaiinAdminMentorsPage from './MainAdminMentorsCompo/MaiinAdminMentorsPage';
 import MainAdminEveentsPage from './MainAdminEventsCompo/MainAdminEveentsPage';
-import MainAdminCommunityPage from './MainAdminCommunityCompo/MainAdminCommunityPage';
+import MainAdminCommunityPage from './MainAdminCommunityPage';
 import MainAdminSettingPage from './MainAdminSettingPage';
 import MainAdminPaymentsPage from './MainAdminPaymentsPage';
 
