@@ -89,7 +89,7 @@ const Task = () => {
                 <div className=" bg-green-100 rounded-3xl p-4 border-2 border-[#C2B0B0]">
                     <div className='flex justify-between'>
                         <h2 className="text-xl font-bold mb-4">Completed Task</h2>
-                        <button> <HiOutlineDotsVertical className='text-2xl'/> </button>
+                        <button> <HiOutlineDotsVertical className='text-2xl' /> </button>
                     </div>
 
                     <div className=" gap-6 justify-center space-y-4">
@@ -118,24 +118,24 @@ const Task = () => {
 
                 {/* Help Section */}
                 <div className="bg-white rounded-3xl p-6 border-2 border-[#C2B0B0] flex flex-col items-center text-center max-w-4xl mx-auto">
-  <h2 className="text-2xl md:text-3xl text-green-600 font-bold mb-4">
-    Are you Feeling Stuck?
-  </h2>
-  <p className="text-sm md:text-base text-gray-500 mb-6">
-    Are you stuck on a task for some time and need help? Your mentor is only a message away!
-  </p>
-  <img
-    src={Ask} 
-    alt="Illustration" 
-    className="w-3/4 md:w-1/2 my-6" 
-  />
-  <button
-    onClick={() => alert('Ask Mentor clicked!')}
-    className="border-2 border-green-600 text-green-500 py-3 px-8 md:px-16 lg:px-20 rounded-3xl hover:bg-green-600 hover:text-white transition"
-  >
-    Ask Mentor
-  </button>
-</div>
+                    <h2 className="text-2xl md:text-3xl text-green-600 font-bold mb-4">
+                        Are you Feeling Stuck?
+                    </h2>
+                    <p className="text-sm md:text-base text-gray-500 mb-6">
+                        Are you stuck on a task for some time and need help? Your mentor is only a message away!
+                    </p>
+                    <img
+                        src={Ask}
+                        alt="Illustration"
+                        className="w-3/4 md:w-1/2 my-6"
+                    />
+                    <button
+                        onClick={() => alert('Ask Mentor clicked!')}
+                        className="border-2 border-green-600 text-green-500 py-3 px-8 md:px-16 lg:px-20 rounded-3xl hover:bg-green-600 hover:text-white transition"
+                    >
+                        Ask Mentor
+                    </button>
+                </div>
 
             </div>
         </div>

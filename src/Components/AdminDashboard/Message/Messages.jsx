@@ -8,13 +8,15 @@ import { GrGallery } from "react-icons/gr";
 import { RiCameraAiLine } from "react-icons/ri";
 import { FaMicrophoneAlt } from "react-icons/fa";
 import { AiOutlineUserAdd } from "react-icons/ai";
+import { BsSearch } from "react-icons/bs";
+import { BiCandles } from "react-icons/bi";
 
 const Messages = () => {
     const [chats, setChats] = useState([
         { id: 1, name: 'Himanshu Gupta', message: 'Lorem ipsum dolor sit amet, consectetur adi...', time: '10:00 April', online: true },
         { id: 2, name: 'Kanha Gupta', message: 'Lorem ipsum dolor sit amet, consectetur adi...', time: '10:00 April', online: false },
         { id: 3, name: 'Dinesh Gupta', message: 'Lorem ipsum dolor sit amet, consectetur adi...', time: '10:00 April', online: false },
-        { id: 4, name: 'Wade Warren', message: 'Lorem ipsum dolor sit amet, consectetur adi...', time: '10:00 April', online: false },
+        { id: 4, name: 'Anshul', message: 'Lorem ipsum dolor sit amet, consectetur adi...', time: '10:00 April', online: false },
         { id: 5, name: 'Kristin Watson', message: 'Lorem ipsum dolor sit amet, consectetur adi...', time: '10:00 April', online: false },
     ]);
 
@@ -46,15 +48,20 @@ const Messages = () => {
 
                     <button className="flex bg-green-500 text-white px-3 py-1 rounded-lg gap-2">
                         <h1>Add</h1>
-                        <AiOutlineUserAdd className='mt-1'/>
+                        <AiOutlineUserAdd className='mt-1' />
                     </button>
 
                 </div>
-                <input
-                    type="text"
-                    placeholder="Search anything"
-                    className="w-full px-4 py-2 border-b focus:outline border-2 rounded-full"
-                />
+                <div className='mt-2 flex items-center w-full max-w-md border-2  rounded-full px-4 py-1'>
+                    <BsSearch className='text-2xl text-gray-500'/>
+                    <input
+                        type="text"
+                        placeholder="Search anything"
+                        className=" px-4 py-2   focus:outline-none rounded-full"
+
+                    />
+                    <BiCandles className='text-2xl text-gray-500 ml-5'/>
+                </div>
                 <div>
                     {chats.map((chat) => (
                         <div
