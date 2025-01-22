@@ -127,7 +127,7 @@ const Task = () => {
                     <img
                         src={Ask}
                         alt="Illustration"
-                        className="w-3/4 md:w-1/2 my-6"
+                        className="w-3/4 md:w-1/2 my-8"
                     />
                     <button
                         onClick={() => alert('Ask Mentor clicked!')}

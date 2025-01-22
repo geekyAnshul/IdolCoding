@@ -3,7 +3,7 @@
 function GeneralDetails() {
   return (
     <div className="flex justify-center p-4">
-      <div className="bg-stone-100 rounded-lg border-2 border-gray-200 w-full max-w-sm pt-6 pb-6 lg:pb-48 px-4">
+      <div className="bg-stone-100 rounded-lg border-2 border-gray-200 w-full max-w-sm pt-6 pb-6 lg:pb-48 px-4 -mt-4">
         <nav className="flex flex-col space-y-4">
           <MenuItem text="General Details" />
           <MenuItem text="My Profile" />
