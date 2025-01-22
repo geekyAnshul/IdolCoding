@@ -44,26 +44,26 @@ const Footer = () => {
           
           <div className="mt-6 flex space-x-4">
             <a
-              href="#"
-              className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-all"
+              href="https://x.com/CodingIdol"
+              className="bg-green-500 p-2 h-8 w-8 rounded-full hover:bg-green-600 transition-all flex justify-center items-center"  
             >
               <i className="fab fa-twitter"></i>
             </a>
             <a
               href="https://www.linkedin.com/company/codingidol"
-              className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-all"
+              className="bg-green-500 p-2 h-8 w-8 flex justify-center items-center rounded-full hover:bg-green-600 transition-all"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a
               href="https://www.facebook.com/codingidol"
-              className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-all"
+              className="bg-green-500 p-2 h-8 w-8 flex justify-center items-center rounded-full hover:bg-green-600 transition-all"
             >
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
               href="https://www.instagram.com/codingidol/"
-              className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-all"
+              className="bg-green-500 p-2 h-8 w-8 flex justify-center items-center rounded-full hover:bg-green-600 transition-all"
             >
               <i className="fab fa-instagram"></i>
             </a>
