@@ -50,10 +50,7 @@ import { PiClipboardText } from "react-icons/pi";
 import { FaLink } from "react-icons/fa6";
 import { LuRedo2 } from "react-icons/lu";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
-// import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-// import Ask from '../../../assets/Askmentor.png'
-// import { HiOutlineDotsVertical } from "react-icons/hi";
 import CreateTask from './CreateTask';
 const Task = () => {
   // Example course progress data
