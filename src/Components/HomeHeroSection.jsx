@@ -7,7 +7,6 @@ import { RiVideoAiLine } from "react-icons/ri";
 import HomeTopMentors from "./HomeTopMentors";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
-import svgback from '../assets/svgback.png'
 import svg from "../assets/svg.png"
 
 
@@ -48,7 +47,7 @@ const HomeHeroSection = () => {
             <div className="relative md:w-1/2 flex flex-col items-center md:items-end">
 
               <motion.div
-                className=" bg-green-200 h-[80%] w-[80%] py-14 rounded-full  "
+                className=" bg-green-200 h-[80%] w-[80%] py-16 rounded-full  "
                 initial={{ opacity: 0, scale: 0.5 }}    //initial pr opacity 0 aur scale chota rhge
                 animate={{ opacity: 1, scale: 1 }}       //animtate hote hote opacity 1 kr aur scale full
                 transition={{ duration: 1 }}

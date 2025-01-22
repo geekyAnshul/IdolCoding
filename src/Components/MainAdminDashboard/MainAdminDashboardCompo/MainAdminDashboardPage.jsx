@@ -35,7 +35,7 @@ const MainAdminDashboardPage = () => {
     datasets: [
       {
         label: 'Earnings',
-        data: [8, 14, 12, 18, 14, 19 , 15, 20 ],
+        data: [8, 14, 12, 18, 14, 19, 15, 20],
         // backgroundColor: '#34D399',
         backgroundColor: (context) => {
           const chart = context.chart;
@@ -115,15 +115,15 @@ const MainAdminDashboardPage = () => {
           </div>
         </div>
       </div>
-    <div className='flex flex-col lg:flex-row'>
-    <div className='xs:w-[100%] lg:w-[60%]'>
-     <RevenueGraph/>
-     </div>
-     <div className='xs:w-[100%] lg:w-[40%]'>
-     <StudentsBox />
-     </div>
-    
-    </div>
+      <div className='flex flex-col lg:flex-row'>
+        <div className='xs:w-[100%] lg:w-[60%]'>
+          <RevenueGraph />
+        </div>
+        <div className='xs:w-[100%] lg:w-[40%]'>
+          <StudentsBox />
+        </div>
+
+      </div>
     </div>
   );
 };

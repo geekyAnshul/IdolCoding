@@ -121,8 +121,8 @@ const MentorCard = () => {
 
 
             <div className="overflow-x-hidden relative p-10 w-full mt-20">
-            <h2 className="text-5xl text-green-500 font-bold text-center mb-16">
-                    Specialized Mentors  
+                <h2 className="text-5xl text-green-500 font-bold text-center mb-16">
+                    Specialized Mentors
                     <span className=" text-black pl-2">from <br /> all around the world</span>
                 </h2>
                 {/* Swiper Track */}
@@ -143,7 +143,7 @@ const MentorCard = () => {
                                 </h1>
                                 <div className="flex items-center mb-2">
                                     {/* <RxBackpack className="text-xl mr-2 text-green-500" /> */}
-                                    <IoBriefcaseOutline className="text-xl mr-2  text-green-500"/>
+                                    <IoBriefcaseOutline className="text-xl mr-2  text-green-500" />
                                     <span className="text-sm text-gray-500">{mentor.experience}</span>
                                 </div>
                                 <p className="text-gray-700 text-sm mb-4">
@@ -170,7 +170,7 @@ const MentorCard = () => {
                         we invite you to be part of our vibrant community and together, let's
                         unlock your full potential.
                     </p>
-                    <button onClick={()=>{navigate('/launching')}} className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
+                    <button onClick={() => { navigate('/launching') }} className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
                         Get In Touch
                     </button>
                 </div>
@@ -198,7 +198,7 @@ const MentorCard = () => {
                             serve the needs of our users. We listen to feedback, adapt to
                             changing trends, and strive for excellence in everything we do.
                         </p>
-                        <button onClick={()=>{navigate('/launching')}} className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 mt-8 rounded">
+                        <button onClick={() => { navigate('/launching') }} className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 mt-8 rounded">
                             Join Now
                         </button>
                     </div>

@@ -1,9 +1,20 @@
+// import React from 'react'
+
+// const StudentCard = () => {
+//   return (
+//     <div>StudentCard</div>
+//   )
+// }
+
+// export default StudentCard
+
+
 // OtherStudents.jsx
 
 import React from "react";
 import { BsThreeDots } from "react-icons/bs";
 
-const OtherStudents = () => {
+const StudentCard = () => {
     const students = [
         { name: "Kathryn Murphy", role: "Mentees", score: 18 },
         { name: "Dianne Russell", role: "Mentees", score: 18 },
@@ -64,4 +75,4 @@ const OtherStudents = () => {
     );
 };
 
-export default OtherStudents;
+export default StudentCard;

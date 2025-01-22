@@ -119,7 +119,7 @@ const PaymentChart = () => {
                 </div>
 
                 {/* Invoices Section */}
-                <div className="w-full md:w-1/3 bg-white border-2 border-[#C2B0B0] rounded-lg p-6">
+                <div className="w-full md:w-1/3 bg-white border-2 border-[#C2B0B0] rounded-lg p-6 xs:flex-col">
                     <div className="flex justify-between items-center mb-4">
                         <h2 className="text-lg font-semibold">Invoices</h2>
                         <select
@@ -176,3 +176,5 @@ const PaymentChart = () => {
 };
 
 export default PaymentChart;
+
+

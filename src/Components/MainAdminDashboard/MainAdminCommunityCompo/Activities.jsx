@@ -1,6 +1,6 @@
 
-import React from "react";
 
+import React from "react";
 
 const Activities = () => {
     const posts = [
@@ -15,7 +15,7 @@ const Activities = () => {
             comments: 2,
         },
         {
-            id: 1,
+            id: 2,
             name: "Shiv Shastri",
             role: "Mentee",
             time: "43min ago",
@@ -28,7 +28,7 @@ const Activities = () => {
     ];
 
     return (
-        <div className="p-2 ">
+        <div className="p-2">
             <div className="lg:max-w-4xl mx-auto">
                 {/* Header */}
                 <h2 className="text-2xl font-bold text-gray-800">Activities</h2>
@@ -39,11 +39,11 @@ const Activities = () => {
                 </p>
 
                 {/* Posts */}
-                <div className="mt-2 ">
+                <div className="mt-2">
                     {posts.map((post) => (
                         <div
                             key={post.id}
-                            className=" rounded-lg mb-6 p-4 bg-gray-100"
+                            className="rounded-lg mb-6 p-4 bg-gray-100"
                         >
                             {/* Post Header */}
                             <div className="flex items-center mb-4">

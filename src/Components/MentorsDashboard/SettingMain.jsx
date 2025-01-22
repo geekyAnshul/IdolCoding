@@ -12,7 +12,7 @@ const SettingMain = () => {
         <div className="flex items-center gap-2">
           <span className="text-gray-900 font-medium">Dashboard</span>
           <span className="text-gray-400">/</span>
-          <span className="text-emerald-500">Classroom</span>
+          <span className="text-emerald-500">Settings</span>
         </div>
         <button className="bg-emerald-500 text-white px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-emerald-600 transition-colors">
           <Plus size={20} />

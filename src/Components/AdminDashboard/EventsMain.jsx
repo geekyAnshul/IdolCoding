@@ -2,7 +2,7 @@ import React from 'react'
 import EventsList from './Events/EventsList'
 import EventsGraph from './Events/EventsGraph'
 import CalenderAndAttendace from './Events/CalenderAndAttendace'
-import Calendar from './DashboardCompo/Calendar'
+
 
 const EventsMain = () => {
   return (

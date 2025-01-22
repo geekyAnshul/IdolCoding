@@ -4,6 +4,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import ourmentor from "../assets/ourmentor.png";
 import { CgWorkAlt } from "react-icons/cg";
 import { RxBackpack } from "react-icons/rx";
 import Advertisment from "./Advertisment";
@@ -232,9 +233,9 @@ const HomeTopMentors = () => {
   {/* Right Section */}
   <div className="w-full md:w-1/2">
     <img
-      src="https://th.bing.com/th/id/OIP.A7UGcjLDBOE1_tUyYBRBUwHaDt?rs=1&pid=ImgDetMain"
+      src={ourmentor}
       alt=""
-      className="object-cover w-48 h-48 md:w-full md:h-full rounded-full md:rounded-lg mx-auto"
+      className="object-cover w-48 h-48 md:w-full md:h-96 rounded-full md:rounded-lg mx-auto"
     />
   </div>
 </div>
