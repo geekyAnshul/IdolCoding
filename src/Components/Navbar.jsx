@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { useNavigate } from 'react-router-dom';
-
+import CodingIdol from "../assets/CodingIdol.png"
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const navigate = useNavigate();
@@ -17,7 +17,9 @@ const Navbar = () => {
   return (
     <div>
       <nav className="xs:px-10 lg:px-32  w-full mx-auto flex items-center justify-between  py-8">
-        <div onClick={() => { navigate('/launching') }} className="text-2xl font-semibold cursor-pointer text-green-500">CODINGIDOL</div>
+        <div onClick={() => { navigate('/launching') }} className="text-2xl font-semibold cursor-pointer text-green-500">
+          <img src={CodingIdol} alt="" className='w-52'/>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-8 font-medium">
@@ -45,6 +47,14 @@ const Navbar = () => {
             }
           >
             Mentorship
+          </NavLink>
+          <NavLink
+            to="/events"
+            className={({ isActive }) =>
+              isActive ? "text-[#12B76A]" : "text-black"
+            }
+          >
+            Events
           </NavLink>
           <NavLink
             to="/about-us"

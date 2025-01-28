@@ -13,14 +13,19 @@ import { VscGraph } from "react-icons/vsc";
 import { GoGoal } from "react-icons/go";
 import { FaLaptopCode } from "react-icons/fa";
 import { TbApps } from "react-icons/tb";
-import { BsClipboard2Data } from "react-icons/bs";
+import { BsClipboard2Data, BsPlugin } from "react-icons/bs";
 import { GiTeacher } from "react-icons/gi";
-import { LuFileSpreadsheet } from "react-icons/lu";
-import { RiDoubleQuotesR } from "react-icons/ri";
+import { LuFileSpreadsheet, LuGitGraph } from "react-icons/lu";
+import { RiAppsLine, RiDoubleQuotesR } from "react-icons/ri";
 import HomeContactUs from "./HomeContactUs";
 import Footer from "./Footer";
 import JoinCommunity from "./JoinCommunity";
 import { useNavigate } from "react-router-dom";
+import { LiaRobotSolid } from "react-icons/lia";
+import { SlPieChart } from "react-icons/sl";
+import { FiUserCheck } from "react-icons/fi";
+import { MdAutoGraph } from "react-icons/md";
+import Faq from "./Faq";
 
 
 const mentors = [
@@ -131,31 +136,40 @@ const HomeTopMentors = () => {
         }}
       >
         {mentors.map((mentor, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden transition-shadow duration-300">
-              <img
-                src={mentor.image}
-                alt={mentor.name}
-                className="w-full h-56 object-cover"
-              />
-              <div className="p-5">
-                <h3 className="text-lg font-bold">{mentor.name}</h3>
-                <div className="flex items-center mt-1">
-                  
-                    <RxBackpack className="text-xl mr-2 text-green-500 "/>
-                
-                  <span className="text-sm text-gray-500 mt-1">{mentor.experience}</span>
-                </div>
-                <p className="text-sm text-gray-600 mt-2 line-clamp-3">
-                  {mentor.description}
-                </p>
-                <button onClick={()=>{navigate('/launching')}} className="mt-5 bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition-all duration-300 w-full">
-                  Book A Free Trial
-                </button>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
+  <SwiperSlide key={index}>
+    <div className="relative bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden transition-shadow duration-300">
+      <img
+        src={mentor.image}
+        alt={mentor.name}
+        className="w-full h-56 object-cover"
+      />
+      <div className="p-5">
+        <h3 className="text-lg font-bold">{mentor.name}</h3>
+        <div className="flex items-center mt-1">
+          <RxBackpack className="text-xl mr-2 text-green-500" />
+          <span className="text-sm text-gray-500 mt-1">{mentor.experience}</span>
+        </div>
+        <p className="text-sm text-gray-600 mt-2 line-clamp-3">
+          {mentor.description}
+        </p>
+        <button
+          onClick={() => {
+            navigate('/launching');
+          }}
+          className="mt-5 bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition-all duration-300 w-full"
+        >
+          Book A Free Trial
+        </button>
+      </div>
+
+      {/* Blur overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center">
+        <h2 className="text-white text-3xl font-bold">Coming Soon</h2>
+      </div>
+    </div>
+  </SwiperSlide>
+))}
+
       </Swiper>
 
 
@@ -364,6 +378,60 @@ const HomeTopMentors = () => {
     <h2 className="text-xl text-zinc-600 hover:text-zinc-800 font-normal mb-2">Resume Building and Branding</h2>
   </div>
 
+  <div className="rounded-3xl flex gap-4 items-center cursor-pointer border-green-500 border-2 px-4 py-8 bg-white hover:shadow-2xl hover:scale-105 hover:shadow-green-500/50 transition-all duration-300">
+    <div className="flex items-center mb-4">
+      <div className="rounded-full bg-green-500 p-3">
+        <LiaRobotSolid className="text-white text-3xl" />
+      </div>
+    </div>
+    <h2 className="text-xl text-zinc-600 hover:text-zinc-800 font-normal mb-2">Artificial Intelligence & Machine Learning</h2>
+  </div>
+
+  <div className="rounded-3xl flex gap-4 items-center cursor-pointer border-green-500 border-2 px-4 py-8 bg-white hover:shadow-2xl hover:scale-105 hover:shadow-green-500/50 transition-all duration-300">
+    <div className="flex items-center mb-4">
+      <div className="rounded-full bg-green-500 p-3">
+        <LuGitGraph className="text-white text-3xl" />
+      </div>
+    </div>
+    <h2 className="text-xl text-zinc-600 hover:text-zinc-800 font-normal mb-2">Devops : Development and Operations</h2>
+  </div>
+
+  <div className="rounded-3xl flex gap-4 items-center cursor-pointer border-green-500 border-2 px-4 py-8 bg-white hover:shadow-2xl hover:scale-105 hover:shadow-green-500/50 transition-all duration-300">
+    <div className="flex items-center mb-4">
+      <div className="rounded-full bg-green-500 p-3">
+        <SlPieChart className="text-white text-3xl" />
+      </div>
+    </div>
+    <h2 className="text-xl text-zinc-600 hover:text-zinc-800 font-normal mb-2">Business Analyst : Business and Technology</h2>
+  </div>
+
+  <div className="rounded-3xl flex gap-4 items-center cursor-pointer border-green-500 border-2 px-4 py-8 bg-white hover:shadow-2xl hover:scale-105 hover:shadow-green-500/50 transition-all duration-300">
+    <div className="flex items-center mb-4">
+      <div className="rounded-full bg-green-500 p-3">
+        <RiAppsLine className="text-white text-3xl" />
+      </div>
+    </div>
+    <h2 className="text-xl text-zinc-600 hover:text-zinc-800 font-normal mb-2">UI/UX Designing:Crafting User-Centric Experiences</h2>
+  </div>
+
+  <div className="rounded-3xl flex gap-4 items-center cursor-pointer border-green-500 border-2 px-4 py-8 bg-white hover:shadow-2xl hover:scale-105 hover:shadow-green-500/50 transition-all duration-300">
+    <div className="flex items-center mb-4">
+      <div className="rounded-full bg-green-500 p-3">
+        <FiUserCheck className="text-white text-3xl" />
+      </div>
+    </div>
+    <h2 className="text-xl text-zinc-600 hover:text-zinc-800 font-normal mb-2">Project Management: Lead, Plan, and Deliver Success</h2>
+  </div>
+
+  <div className="rounded-3xl flex gap-4 items-center cursor-pointer border-green-500 border-2 px-4 py-8 bg-white hover:shadow-2xl hover:scale-105 hover:shadow-green-500/50 transition-all duration-300">
+    <div className="flex items-center mb-4">
+      <div className="rounded-full bg-green-500 p-3">
+        <MdAutoGraph className="text-white text-3xl" />
+      </div>
+    </div>
+    <h2 className="text-xl text-zinc-600 hover:text-zinc-800 font-normal mb-2">Marketing: Strategies to Grow and Succeed</h2>
+  </div>
+
   <div className="w-[80vw] mt-10 flex justify-center items-center">
   <button onClick={()=>{navigate('/launching')}} className="text-white bg-green-500 px-6 py-3 w-72 rounded-lg  hover:bg-green-600 transition-all duration-300">
     Explore More
@@ -424,6 +492,7 @@ const HomeTopMentors = () => {
     
 
       <JoinCommunity/>
+      <Faq />
     <HomeContactUs/>
 
     <Footer/>

@@ -159,8 +159,8 @@ const FindMentorPage = () => {
 
     <div className="max-w-7xl mx-auto mt-20 xs:px-4 md:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
     
-      <div className="bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
-  <div className="flex flex-col md:flex-row gap-4">
+      <div className="relative bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
+  <div className=" flex flex-col md:flex-row gap-4">
     {/* Image Section */}
     <img
       src="https://as2.ftcdn.net/v2/jpg/01/34/51/79/1000_F_134517966_TzOCj9dV5DLsPfQRFmjxkDKSDov5PQ1i.jpg"
@@ -190,6 +190,7 @@ const FindMentorPage = () => {
         </p>
       </div>
     </div>
+    
   </div>
 
   {/* Description */}
@@ -211,9 +212,12 @@ const FindMentorPage = () => {
       Book Now
     </button>
   </div>
+  <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm rounded-lg flex items-center justify-center">
+        <h2 className="text-white text-3xl font-bold">Coming Soon</h2>
+      </div>
 </div>
 
-<div className="bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
+<div className="relative bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
   <div className="flex flex-col md:flex-row gap-4">
     {/* Image Section */}
     <img
@@ -264,10 +268,14 @@ const FindMentorPage = () => {
     <button onClick={()=>{navigate('/launching')}} className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg">
       Book Now
     </button>
+    <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex rounded-xl items-center justify-center">
+        <h2 className="text-white text-3xl font-bold">Coming Soon</h2>
+      </div>
   </div>
+  
 </div>
 
-<div className="bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
+<div className="relative bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
   <div className="flex flex-col md:flex-row gap-4">
     {/* Image Section */}
     <img
@@ -319,9 +327,12 @@ const FindMentorPage = () => {
       Book Now
     </button>
   </div>
+  <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm rounded-lg flex items-center justify-center">
+        <h2 className="text-white text-3xl font-bold">Coming Soon</h2>
+      </div>
 </div>
 
-<div className="bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
+<div className="relative bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
   <div className="flex flex-col md:flex-row gap-4">
     {/* Image Section */}
     <img
@@ -373,9 +384,12 @@ const FindMentorPage = () => {
       Book Now
     </button>
   </div>
+  <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm rounded-lg flex items-center justify-center">
+        <h2 className="text-white text-3xl font-bold">Coming Soon</h2>
+      </div>
 </div>
 
-<div className="bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
+<div className="relative bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
   <div className="flex flex-col md:flex-row gap-4">
     {/* Image Section */}
     <img
@@ -427,9 +441,12 @@ const FindMentorPage = () => {
       Book Now
     </button>
   </div>
+  <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm rounded-lg flex items-center justify-center">
+        <h2 className="text-white text-3xl font-bold">Coming Soon</h2>
+      </div>
 </div>
 
-<div className="bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
+<div className="relative bg-[#e4fff4] rounded-2xl border-green-500 border-2 p-8 text-center">
   <div className="flex flex-col md:flex-row gap-4">
     {/* Image Section */}
     <img
@@ -481,6 +498,9 @@ const FindMentorPage = () => {
       Book Now
     </button>
   </div>
+  <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm rounded-lg flex items-center justify-center">
+        <h2 className="text-white text-3xl font-bold">Coming Soon</h2>
+      </div>
 </div>
 
 

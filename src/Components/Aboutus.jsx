@@ -71,11 +71,7 @@ function Aboutus() {
                                 Discover CodingIdol: Unveiling Our Story and Mission
                             </h2>
                             <p className="text-lg leading-relaxed">
-                                At [Your Company Name], we're more than just a business – we're a
-                                community driven by a shared vision and passion for [briefly
-                                describe what your company does or offers]. Since [year of
-                                establishment], we've been on a journey to [describe your
-                                company's journey, mission, or values].
+                            In the bustling heart of India, amidst the digital revolution, emerged a spark of an idea called Codingidol. This idea was born from a deep desire to bridge the educational chasm that often leaves brilliant minds in tier 2 and 3 colleges unexplored and unsupported. It was about more than just providing guidance—it was about nurturing potential and unlocking doors to a world of opportunities.
                             </p>
                         </motion.div>
                     </div>

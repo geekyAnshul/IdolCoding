@@ -27,12 +27,15 @@ const Footer = () => {
 
         {/* Column 3 */}
         <div>
-          <h2 className="text-lg font-bold">Services</h2>
+          <h2 className="text-lg font-bold">Resources</h2>
+
+
+
           <ul className="mt-4 space-y-2">
-            <li>Web Development</li>
-            <li>App Development</li>
-            <li>Digital Marketing</li>
-            <li>Graphic Design</li>
+            <li>Home</li>
+            <li>Find a Mentor</li>
+            <li>Mentorship</li>
+            <li>Events</li>
           </ul>
         </div>
 

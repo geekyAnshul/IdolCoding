@@ -126,11 +126,11 @@ const MentorCard = () => {
                     <span className=" text-black pl-2">from <br /> all around the world</span>
                 </h2>
                 {/* Swiper Track */}
-                <div className="flex animate-scroll-reverse space-x-20">
+                <div className=" flex animate-scroll-reverse space-x-20">
                     {mentors.concat(mentors).map((mentor, index) => (
                         <div
                             key={index}
-                            className="flex-shrink-0 w-80 flex items-center justify-center bg-white"
+                            className="relative flex-shrink-0 w-80 flex items-center justify-center bg-white"
                         >
                             <div className="flex flex-col p-6 border-2 border-green-500  shadow-md rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl">
                                 <img
@@ -153,6 +153,9 @@ const MentorCard = () => {
                                     Book A Free Trial
                                 </button> */}
                             </div>
+                            <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex rounded-lg items-center justify-center">
+        <h2 className="text-white text-3xl font-bold">Coming Soon</h2>
+      </div>
                         </div>
                     ))}
                 </div>
