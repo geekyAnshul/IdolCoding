@@ -124,6 +124,14 @@ const Navbar = () => {
               Mentorship
             </NavLink>
             <NavLink
+            to="/events"
+            className={({ isActive }) =>
+              isActive ? "text-[#12B76A]" : "text-black"
+            }
+          >
+            Events
+          </NavLink>
+            <NavLink
               to="/about-us"
               className={({ isActive }) =>
                 isActive ? "text-[#12B76A]" : "text-black"
